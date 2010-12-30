@@ -1,0 +1,28 @@
+
+@import "compass/reset";
+@import "compass/utilities";
+@import "compass/css3";
+
+/* Global Vars */
+$colorText: #474747;
+
+
+/* Global Styles */
+@import "partials/fonts";
+
+body {
+	font-family: Verdana, sans-serif;
+	font-size: 0.8em;
+	line-height: 1.3em;
+	color: $colorText;
+}
+a {
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5 {
+	font-family: 'CantarellBold';
+}
+
+
+/* Partials for different pages */
+@import "partials/admin";

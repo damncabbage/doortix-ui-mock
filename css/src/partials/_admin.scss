@@ -1,0 +1,142 @@
+
+body.admin {
+
+	/* TODO: Move palette out to global */
+	$colorFooterBG: #606060;
+	$colorContentBG: #fdfdfd;
+	$colorContentBorder: #b8cbd1;
+	$colorSideBarBG: #ebf5f6;
+	$colorTabBarBG: #bed3d8;
+	$colorTopBarBG: #a0bec9;
+
+	$fullWidth: 960px;
+	$contentWidth: 680px;
+	$sideBarWidth: 240px;
+
+	$contentOverlap: 10px;
+
+	$vertBoxInset: 20px; 
+	$gutter: 20px;
+
+	background: $colorFooterBG;
+
+	.container {
+		width: $fullWidth;
+		margin: 0 auto;
+	}
+
+	#top {
+		background: $colorTopBarBG;
+		border-bottom: 1px solid ($colorTopBarBG - #070707);
+		.container {
+			h1 {
+				font-size: 2em;
+				margin-left: -0.06em;
+				line-height: 2.1em;
+				@include text-shadow($colorTopBarBG + #252525, 1px, 1px, 1px);
+			}
+		}
+	}
+
+	#tabbar {
+		background: $colorTabBarBG;
+		border-top: 1px solid ($colorTabBarBG + #070707);
+		padding: 5px 0;
+
+		ul#navigation {
+			display: block;
+			@include pie-clearfix;
+			margin-top: 10px;
+
+			li {
+				display: block;
+				float: left;
+				a {
+					display: block;
+					padding: 6px 11px 5px;
+					height: 20px;
+					line-height: 20px;
+					position: relative;
+					top: -3px;
+					font-size: 1em;
+					font-family: 'CantarellBold';
+					color: $colorText + #000005;
+					@include text-shadow($colorTabBarBG + #151515, 1px, 1px, 1px);
+				}
+				&.selected a {
+					padding: 5px 10px;
+					color: $colorText;
+					background: $colorContentBG;
+					border-top: 1px solid $colorContentBorder;
+					border-left: 1px solid $colorContentBorder;
+					border-right: 1px solid $colorContentBorder;
+					@include border-top-radius($contentOverlap);
+				}
+			}
+		}
+	}
+
+	#main {
+		background: $colorSideBarBG;
+		border-top: 1px solid $colorContentBorder;
+		border-bottom: 1px solid $colorContentBorder;
+		@include pie-clearfix;
+
+		#content {
+			float: left;
+			width: 70%;
+			.overlap {
+				background: $colorContentBG;
+				@include border-right-radius($contentOverlap);
+				margin: -#{$contentOverlap} -#{$contentOverlap} -#{$contentOverlap} 0;
+				border-top: 1px solid $colorContentBorder;
+				border-right: 1px solid $colorContentBorder;
+				border-bottom: 1px solid $colorContentBorder;
+			}
+			.container {
+				width: $contentWidth;
+				margin: $contentOverlap $contentOverlap $contentOverlap auto;
+				min-height: 500px;
+				padding: $vertBoxInset $gutter $vertBoxInset 0;
+			}
+		}
+
+		#sidebar {
+			float: right;
+			width: 30%;
+			background: $colorSideBarBG;
+
+			.container {
+				width: $contentWidth;
+				margin: 0 auto 0 $contentOverlap;
+				padding: $vertBoxInset 0 $vertBoxInset $gutter;
+				h3 {
+					padding-top: 0.85em;
+				}
+			}
+		}
+
+
+		h2 {
+			font-size: 2.5em;
+			line-height: 1em;
+			padding-bottom: 0.6em;
+			margin-left: -0.1em;
+		}
+		h3 {
+			font-size: 1.3em;
+			margin-left: -0.05em;
+			padding-bottom: 0.6em;
+		}
+	}
+
+
+	#footer {
+		.container {
+			margin-top: $contentOverlap;
+			padding: $vertBoxInset 0;
+		}
+	}
+
+
+}

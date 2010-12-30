@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/* line 14, ../../../../../../../home/rhoward/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../../../../home/rhoward/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../../../home/rhoward/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../../../home/rhoward/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../../../home/rhoward/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../../../home/rhoward/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../../../home/rhoward/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../../../home/rhoward/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* Global Vars */
+/* Global Styles */
+@font-face {
+  font-family: 'CantarellRegular';
+  src: url("Cantarell-Regular-webfont.eot");
+  src: local("☺"), url("../fonts/Cantarell-Regular-webfont.woff") format("woff"), url("../fonts/Cantarell-Regular-webfont.ttf") format("truetype"), url("../fonts/Cantarell-Regular-webfont.svg#webfontABgg4EO0") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CantarellOblique';
+  src: url("Cantarell-Oblique-webfont.eot");
+  src: local("☺"), url("../fonts/Cantarell-Oblique-webfont.woff") format("woff"), url("../fonts/Cantarell-Oblique-webfont.ttf") format("truetype"), url("../fonts/Cantarell-Oblique-webfont.svg#webfont3PgZ7J9k") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CantarellBold';
+  src: url("Cantarell-Bold-webfont.eot");
+  src: local("☺"), url("../fonts/Cantarell-Bold-webfont.woff") format("woff"), url("../fonts/Cantarell-Bold-webfont.ttf") format("truetype"), url("../fonts/Cantarell-Bold-webfont.svg#webfontrmxS4R7l") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CantarellBoldOblique';
+  src: url("Cantarell-BoldOblique-webfont.eot");
+  src: local("☺"), url("../fonts/Cantarell-BoldOblique-webfont.woff") format("woff"), url("../fonts/Cantarell-BoldOblique-webfont.ttf") format("truetype"), url("../fonts/Cantarell-BoldOblique-webfont.svg#webfontkS4olXm8") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 13, src/screen.scss */
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 0.8em;
+  line-height: 1.3em;
+  color: #474747;
+}
+
+/* line 19, src/screen.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 22, src/screen.scss */
+h1, h2, h3, h4, h5 {
+  font-family: 'CantarellBold';
+}
+
+/* Partials for different pages */
+/* line 2, src/partials/_admin.scss */
+body.admin {
+  /* TODO: Move palette out to global */
+  background: #606060;
+}
+/* line 23, src/partials/_admin.scss */
+body.admin .container {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 28, src/partials/_admin.scss */
+body.admin #top {
+  background: #a0bec9;
+  border-bottom: 1px solid #99b7c2;
+}
+/* line 32, src/partials/_admin.scss */
+body.admin #top .container h1 {
+  font-size: 2em;
+  margin-left: -0.06em;
+  line-height: 2.1em;
+  text-shadow: #c5e3ee 1px 1px 1px;
+}
+/* line 41, src/partials/_admin.scss */
+body.admin #tabbar {
+  background: #bed3d8;
+  border-top: 1px solid #c5dadf;
+  padding: 5px 0;
+}
+/* line 46, src/partials/_admin.scss */
+body.admin #tabbar ul#navigation {
+  display: block;
+  *zoom: 1;
+  margin-top: 10px;
+}
+/* line 22, ../../../../../../../home/rhoward/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+body.admin #tabbar ul#navigation:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 51, src/partials/_admin.scss */
+body.admin #tabbar ul#navigation li {
+  display: block;
+  float: left;
+}
+/* line 54, src/partials/_admin.scss */
+body.admin #tabbar ul#navigation li a {
+  display: block;
+  padding: 6px 11px 5px;
+  height: 20px;
+  line-height: 20px;
+  position: relative;
+  top: -3px;
+  font-size: 1em;
+  font-family: 'CantarellBold';
+  color: #47474c;
+  text-shadow: #d3e8ed 1px 1px 1px;
+}
+/* line 66, src/partials/_admin.scss */
+body.admin #tabbar ul#navigation li.selected a {
+  padding: 5px 10px;
+  color: #474747;
+  background: #fdfdfd;
+  border-top: 1px solid #b8cbd1;
+  border-left: 1px solid #b8cbd1;
+  border-right: 1px solid #b8cbd1;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -o-border-top-left-radius: 10px;
+  -ms-border-top-left-radius: 10px;
+  -khtml-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -o-border-top-right-radius: 10px;
+  -ms-border-top-right-radius: 10px;
+  -khtml-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* line 79, src/partials/_admin.scss */
+body.admin #main {
+  background: #ebf5f6;
+  border-top: 1px solid #b8cbd1;
+  border-bottom: 1px solid #b8cbd1;
+  *zoom: 1;
+}
+/* line 22, ../../../../../../../home/rhoward/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+body.admin #main:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 85, src/partials/_admin.scss */
+body.admin #main #content {
+  float: left;
+  width: 70%;
+}
+/* line 88, src/partials/_admin.scss */
+body.admin #main #content .overlap {
+  background: #fdfdfd;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -o-border-top-right-radius: 10px;
+  -ms-border-top-right-radius: 10px;
+  -khtml-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -o-border-bottom-right-radius: 10px;
+  -ms-border-bottom-right-radius: 10px;
+  -khtml-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: -10px -10px -10px 0;
+  border-top: 1px solid #b8cbd1;
+  border-right: 1px solid #b8cbd1;
+  border-bottom: 1px solid #b8cbd1;
+}
+/* line 96, src/partials/_admin.scss */
+body.admin #main #content .container {
+  width: 680px;
+  margin: 10px 10px 10px auto;
+  min-height: 500px;
+  padding: 20px 20px 20px 0;
+}
+/* line 104, src/partials/_admin.scss */
+body.admin #main #sidebar {
+  float: right;
+  width: 30%;
+  background: #ebf5f6;
+}
+/* line 109, src/partials/_admin.scss */
+body.admin #main #sidebar .container {
+  width: 680px;
+  margin: 0 auto 0 10px;
+  padding: 20px 0 20px 20px;
+}
+/* line 113, src/partials/_admin.scss */
+body.admin #main #sidebar .container h3 {
+  padding-top: 0.85em;
+}
+/* line 120, src/partials/_admin.scss */
+body.admin #main h2 {
+  font-size: 2.5em;
+  line-height: 1em;
+  padding-bottom: 0.6em;
+  margin-left: -0.1em;
+}
+/* line 126, src/partials/_admin.scss */
+body.admin #main h3 {
+  font-size: 1.3em;
+  margin-left: -0.05em;
+  padding-bottom: 0.6em;
+}
+/* line 135, src/partials/_admin.scss */
+body.admin #footer .container {
+  margin-top: 10px;
+  padding: 20px 0;
+}
