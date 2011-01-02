@@ -11,7 +11,7 @@ body.admin {
 
 	$fullWidth: 960px;
 	$contentWidth: 680px;
-	$sideBarWidth: 240px;
+	$sideBarWidth: 230px;
 
 	$contentOverlap: 10px;
 
@@ -23,6 +23,7 @@ body.admin {
 	.container {
 		width: $fullWidth;
 		margin: 0 auto;
+		background-color: rgba(255,128,128,0.3);
 	}
 
 	#top {
@@ -83,10 +84,12 @@ body.admin {
 		@include pie-clearfix;
 
 		#content {
+			background-color: rgba(128,255,128,0.3);
 			float: left;
 			width: 70%;
 			.overlap {
 				background: $colorContentBG;
+			background-color: rgba(128,255,128,0.3);
 				@include border-right-radius($contentOverlap);
 				margin: -#{$contentOverlap} -#{$contentOverlap} -#{$contentOverlap} 0;
 				border-top: 1px solid $colorContentBorder;
@@ -105,9 +108,10 @@ body.admin {
 			float: right;
 			width: 30%;
 			background: $colorSideBarBG;
+			background-color: rgba(128,128,255,0.3);
 
 			.container {
-				width: $contentWidth;
+				width: $sideBarWidth;
 				margin: 0 auto 0 $contentOverlap;
 				padding: $vertBoxInset 0 $vertBoxInset $gutter;
 				h3 {

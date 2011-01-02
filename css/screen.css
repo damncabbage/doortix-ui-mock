@@ -121,26 +121,27 @@ body.admin {
 body.admin .container {
   width: 960px;
   margin: 0 auto;
+  background-color: rgba(255, 128, 128, 0.3);
 }
-/* line 28, src/partials/_admin.scss */
+/* line 29, src/partials/_admin.scss */
 body.admin #top {
   background: #a0bec9;
   border-bottom: 1px solid #99b7c2;
 }
-/* line 32, src/partials/_admin.scss */
+/* line 33, src/partials/_admin.scss */
 body.admin #top .container h1 {
   font-size: 2em;
   margin-left: -0.06em;
   line-height: 2.1em;
   text-shadow: #c5e3ee 1px 1px 1px;
 }
-/* line 41, src/partials/_admin.scss */
+/* line 42, src/partials/_admin.scss */
 body.admin #tabbar {
   background: #bed3d8;
   border-top: 1px solid #c5dadf;
   padding: 5px 0;
 }
-/* line 46, src/partials/_admin.scss */
+/* line 47, src/partials/_admin.scss */
 body.admin #tabbar ul#navigation {
   display: block;
   *zoom: 1;
@@ -155,12 +156,12 @@ body.admin #tabbar ul#navigation:after {
   overflow: hidden;
   visibility: hidden;
 }
-/* line 51, src/partials/_admin.scss */
+/* line 52, src/partials/_admin.scss */
 body.admin #tabbar ul#navigation li {
   display: block;
   float: left;
 }
-/* line 54, src/partials/_admin.scss */
+/* line 55, src/partials/_admin.scss */
 body.admin #tabbar ul#navigation li a {
   display: block;
   padding: 6px 11px 5px;
@@ -173,7 +174,7 @@ body.admin #tabbar ul#navigation li a {
   color: #47474c;
   text-shadow: #d3e8ed 1px 1px 1px;
 }
-/* line 66, src/partials/_admin.scss */
+/* line 67, src/partials/_admin.scss */
 body.admin #tabbar ul#navigation li.selected a {
   padding: 5px 10px;
   color: #474747;
@@ -194,7 +195,7 @@ body.admin #tabbar ul#navigation li.selected a {
   -khtml-border-top-right-radius: 10px;
   border-top-right-radius: 10px;
 }
-/* line 79, src/partials/_admin.scss */
+/* line 80, src/partials/_admin.scss */
 body.admin #main {
   background: #ebf5f6;
   border-top: 1px solid #b8cbd1;
@@ -210,14 +211,16 @@ body.admin #main:after {
   overflow: hidden;
   visibility: hidden;
 }
-/* line 85, src/partials/_admin.scss */
+/* line 86, src/partials/_admin.scss */
 body.admin #main #content {
+  background-color: rgba(128, 255, 128, 0.3);
   float: left;
   width: 70%;
 }
-/* line 88, src/partials/_admin.scss */
+/* line 90, src/partials/_admin.scss */
 body.admin #main #content .overlap {
   background: #fdfdfd;
+  background-color: rgba(128, 255, 128, 0.3);
   -moz-border-radius-topright: 10px;
   -webkit-border-top-right-radius: 10px;
   -o-border-top-right-radius: 10px;
@@ -235,43 +238,44 @@ body.admin #main #content .overlap {
   border-right: 1px solid #b8cbd1;
   border-bottom: 1px solid #b8cbd1;
 }
-/* line 96, src/partials/_admin.scss */
+/* line 99, src/partials/_admin.scss */
 body.admin #main #content .container {
   width: 680px;
   margin: 10px 10px 10px auto;
   min-height: 500px;
   padding: 20px 20px 20px 0;
 }
-/* line 104, src/partials/_admin.scss */
+/* line 107, src/partials/_admin.scss */
 body.admin #main #sidebar {
   float: right;
   width: 30%;
   background: #ebf5f6;
+  background-color: rgba(128, 128, 255, 0.3);
 }
-/* line 109, src/partials/_admin.scss */
+/* line 113, src/partials/_admin.scss */
 body.admin #main #sidebar .container {
-  width: 680px;
+  width: 230px;
   margin: 0 auto 0 10px;
   padding: 20px 0 20px 20px;
 }
-/* line 113, src/partials/_admin.scss */
+/* line 117, src/partials/_admin.scss */
 body.admin #main #sidebar .container h3 {
   padding-top: 0.85em;
 }
-/* line 120, src/partials/_admin.scss */
+/* line 124, src/partials/_admin.scss */
 body.admin #main h2 {
   font-size: 2.5em;
   line-height: 1em;
   padding-bottom: 0.6em;
   margin-left: -0.1em;
 }
-/* line 126, src/partials/_admin.scss */
+/* line 130, src/partials/_admin.scss */
 body.admin #main h3 {
   font-size: 1.3em;
   margin-left: -0.05em;
   padding-bottom: 0.6em;
 }
-/* line 135, src/partials/_admin.scss */
+/* line 139, src/partials/_admin.scss */
 body.admin #footer .container {
   margin-top: 10px;
   padding: 20px 0;
