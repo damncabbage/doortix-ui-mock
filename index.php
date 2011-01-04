@@ -1,27 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>SquidTix | Log In</title>
-	<link rel="stylesheet" href="css/screen.css" />
-</head>
-<body class="login">
-	<div class="container">
+<?php
 
-		<h1>SquidTix</h1>
+// change the following paths if necessary
+$yii=dirname(__FILE__).'/protected/framework/yii.php';
+$config=dirname(__FILE__).'/protected/config/main.php';
 
-		<div id="signin">
-			<form action="process.php" method="post">
-				<label for="username">Username</label>
-				<input id="username" name="username" class="text" />
+// remove the following lines when in production mode
+defined('YII_DEBUG') or define('YII_DEBUG',true);
+// specify how many levels of call stack should be shown in each log message
+defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 
-				<label for="username">Password</label>
-				<input id="username" name="username" class="text" />
-
-				<input type="submit" value="Log In" />
-			</form>
-		</div>
-
-	</div>
-</body>
-</html>
+require_once($yii);
+Yii::createWebApplication($config)->run();

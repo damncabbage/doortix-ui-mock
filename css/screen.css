@@ -133,7 +133,7 @@ body.admin #top .container h1 {
   font-size: 2em;
   margin-left: -0.06em;
   line-height: 2.1em;
-  text-shadow: #c5e3ee 1px 1px 1px;
+  text-shadow: #c5e3ee 0 1px 1px;
 }
 /* line 42, src/partials/_admin.scss */
 body.admin #tabbar {
@@ -172,7 +172,7 @@ body.admin #tabbar ul#navigation li a {
   font-size: 1em;
   font-family: 'CantarellBold';
   color: #47474c;
-  text-shadow: #d3e8ed 1px 1px 1px;
+  text-shadow: #d3e8ed 0 1px 1px;
 }
 /* line 67, src/partials/_admin.scss */
 body.admin #tabbar ul#navigation li.selected a {

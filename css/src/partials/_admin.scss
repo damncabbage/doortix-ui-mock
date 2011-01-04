@@ -34,7 +34,7 @@ body.admin {
 				font-size: 2em;
 				margin-left: -0.06em;
 				line-height: 2.1em;
-				@include text-shadow($colorTopBarBG + #252525, 1px, 1px, 1px);
+				@include text-shadow($colorTopBarBG + #252525, 0, 1px, 1px);
 			}
 		}
 	}
@@ -62,7 +62,7 @@ body.admin {
 					font-size: 1em;
 					font-family: 'CantarellBold';
 					color: $colorText + #000005;
-					@include text-shadow($colorTabBarBG + #151515, 1px, 1px, 1px);
+					@include text-shadow($colorTabBarBG + #151515, 0, 1px, 1px);
 				}
 				&.selected a {
 					padding: 5px 10px;

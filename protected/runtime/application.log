@@ -1,0 +1,67 @@
+2011/01/02 19:23:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/domains/localhost/www/squidtix/protected/framework/db/CDbConnection.php:269
+Stack trace:
+#0 /var/www/domains/localhost/www/squidtix/protected/framework/db/CDbConnection.php(242): CDbConnection->open()
+#1 /var/www/domains/localhost/www/squidtix/protected/framework/db/CDbConnection.php(221): CDbConnection->setActive(true)
+#2 /var/www/domains/localhost/www/squidtix/protected/framework/base/CModule.php(372): CDbConnection->init()
+#3 /var/www/domains/localhost/www/squidtix/protected/framework/base/CApplication.php(406): CModule->getComponent('db')
+#4 /var/www/domains/localhost/www/squidtix/protected/framework/db/ar/CActiveRecord.php(589): CApplication->getDb()
+#5 /var/www/domains/localhost/www/squidtix/protected/framework/db/ar/CActiveRecord.php(2167): CActiveRecord->getDbConnection()
+#6 /var/www/domains/localhost/www/squidtix/protected/framework/db/ar/CActiveRecord.php(353): CActiveRecordMetaData->__construct(Object(User))
+#7 /var/www/domains/localhost/www/squidtix/protected/models/User.php(22): CActiveRecord::model('User')
+#8 /var/www/domains/localhost/www/squidtix/protected/commands/GetArrayCommand.php(8): User::model()
+#9 /var/www/domains/localhost/www/squidtix/protected/framework/console/CConsoleCommandRunner.php(62): GetArrayCommand->run(Array)
+#10 /var/www/domains/localhost/www/squidtix/protected/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run(Array)
+#11 /var/www/domains/localhost/www/squidtix/protected/framework/base/CApplication.php(135): CConsoleApplication->processRequest()
+#12 /var/www/domains/localhost/www/squidtix/protected/framework/yiic.php(33): CApplication->run()
+#13 /var/www/domains/localhost/www/squidtix/protected/yiic.php(7): require_once('/var/www/domain...')
+#14 /var/www/domains/localhost/www/squidtix/protected/yiic(4): require_once('/var/www/domain...')
+#15 {main}
+2011/01/02 19:24:32 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{user}}" for active record class "User" cannot be found in the database.' in /var/www/domains/localhost/www/squidtix/protected/framework/db/ar/CActiveRecord.php:2168
+Stack trace:
+#0 /var/www/domains/localhost/www/squidtix/protected/framework/db/ar/CActiveRecord.php(353): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/domains/localhost/www/squidtix/protected/models/User.php(22): CActiveRecord::model('User')
+#2 /var/www/domains/localhost/www/squidtix/protected/commands/GetArrayCommand.php(8): User::model()
+#3 /var/www/domains/localhost/www/squidtix/protected/framework/console/CConsoleCommandRunner.php(62): GetArrayCommand->run(Array)
+#4 /var/www/domains/localhost/www/squidtix/protected/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run(Array)
+#5 /var/www/domains/localhost/www/squidtix/protected/framework/base/CApplication.php(135): CConsoleApplication->processRequest()
+#6 /var/www/domains/localhost/www/squidtix/protected/framework/yiic.php(33): CApplication->run()
+#7 /var/www/domains/localhost/www/squidtix/protected/yiic.php(7): require_once('/var/www/domain...')
+#8 /var/www/domains/localhost/www/squidtix/protected/yiic(4): require_once('/var/www/domain...')
+#9 {main}
+2011/01/02 19:25:34 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{user}}" for active record class "User" cannot be found in the database.' in /var/www/domains/localhost/www/squidtix/protected/framework/db/ar/CActiveRecord.php:2168
+Stack trace:
+#0 /var/www/domains/localhost/www/squidtix/protected/framework/db/ar/CActiveRecord.php(353): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/domains/localhost/www/squidtix/protected/models/User.php(22): CActiveRecord::model('User')
+#2 /var/www/domains/localhost/www/squidtix/protected/commands/GetArrayCommand.php(8): User::model()
+#3 /var/www/domains/localhost/www/squidtix/protected/framework/console/CConsoleCommandRunner.php(62): GetArrayCommand->run(Array)
+#4 /var/www/domains/localhost/www/squidtix/protected/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run(Array)
+#5 /var/www/domains/localhost/www/squidtix/protected/framework/base/CApplication.php(135): CConsoleApplication->processRequest()
+#6 /var/www/domains/localhost/www/squidtix/protected/framework/yiic.php(33): CApplication->run()
+#7 /var/www/domains/localhost/www/squidtix/protected/yiic.php(7): require_once('/var/www/domain...')
+#8 /var/www/domains/localhost/www/squidtix/protected/yiic(4): require_once('/var/www/domain...')
+#9 {main}
+2011/01/02 19:26:10 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.0" is not defined.' in /var/www/domains/localhost/www/squidtix/protected/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/domains/localhost/www/squidtix/protected/framework/db/schema/CDbCriteria.php(128): CComponent->__set('0', 'id')
+#1 /var/www/domains/localhost/www/squidtix/protected/framework/db/schema/CDbCommandBuilder.php(460): CDbCriteria->__construct(Array)
+#2 /var/www/domains/localhost/www/squidtix/protected/framework/db/ar/CActiveRecord.php(1322): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /var/www/domains/localhost/www/squidtix/protected/commands/GetArrayCommand.php(8): CActiveRecord->findAll(Array)
+#4 /var/www/domains/localhost/www/squidtix/protected/framework/console/CConsoleCommandRunner.php(62): GetArrayCommand->run(Array)
+#5 /var/www/domains/localhost/www/squidtix/protected/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run(Array)
+#6 /var/www/domains/localhost/www/squidtix/protected/framework/base/CApplication.php(135): CConsoleApplication->processRequest()
+#7 /var/www/domains/localhost/www/squidtix/protected/framework/yiic.php(33): CApplication->run()
+#8 /var/www/domains/localhost/www/squidtix/protected/yiic.php(7): require_once('/var/www/domain...')
+#9 /var/www/domains/localhost/www/squidtix/protected/yiic(4): require_once('/var/www/domain...')
+#10 {main}
+2011/01/02 19:33:46 [error] [exception.CException] exception 'CException' with message 'User does not have a method named "tableSchema".' in /var/www/domains/localhost/www/squidtix/protected/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/domains/localhost/www/squidtix/protected/framework/db/ar/CActiveRecord.php(195): CComponent->__call('tableSchema', Array)
+#1 /var/www/domains/localhost/www/squidtix/protected/commands/GetArrayCommand.php(16): CActiveRecord->__call('tableSchema', Array)
+#2 /var/www/domains/localhost/www/squidtix/protected/commands/GetArrayCommand.php(16): User->tableSchema()
+#3 /var/www/domains/localhost/www/squidtix/protected/framework/console/CConsoleCommandRunner.php(62): GetArrayCommand->run(Array)
+#4 /var/www/domains/localhost/www/squidtix/protected/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run(Array)
+#5 /var/www/domains/localhost/www/squidtix/protected/framework/base/CApplication.php(135): CConsoleApplication->processRequest()
+#6 /var/www/domains/localhost/www/squidtix/protected/framework/yiic.php(33): CApplication->run()
+#7 /var/www/domains/localhost/www/squidtix/protected/yiic.php(7): require_once('/var/www/domain...')
+#8 /var/www/domains/localhost/www/squidtix/protected/yiic(4): require_once('/var/www/domain...')
+#9 {main}
