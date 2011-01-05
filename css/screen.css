@@ -60,6 +60,7 @@ a img {
 }
 
 /* Global Vars */
+/* http://www.colourlovers.com/palette/46688/fresh_cut_day */
 /* Global Styles */
 @font-face {
   font-family: 'CantarellRegular';
@@ -93,62 +94,81 @@ a img {
   font-style: normal;
 }
 
-/* line 13, src/screen.scss */
+/* line 28, src/screen.scss */
 body {
   font-family: Verdana, sans-serif;
   font-size: 0.8em;
   line-height: 1.3em;
   color: #474747;
+  background-color: #44ccd9;
+  background-image: url('/squidtix/images/bg.pattern4.png?1294175857');
 }
 
-/* line 19, src/screen.scss */
+/* line 36, src/screen.scss */
 a {
   text-decoration: none;
 }
+/* line 38, src/screen.scss */
+a:focus {
+  outline: 1px dotted;
+}
 
-/* line 22, src/screen.scss */
+/* line 40, src/screen.scss */
 h1, h2, h3, h4, h5 {
   font-family: 'CantarellBold';
 }
 
+/* Helpers */
 /* Partials for different pages */
-/* line 2, src/partials/_admin.scss */
-body.admin {
-  /* TODO: Move palette out to global */
-  background: #606060;
+/* line 7, src/partials/_admin.scss */
+body.admin #wrapper {
+  width: 960px;
+  margin: 25px auto;
+}
+/* line 12, src/partials/_admin.scss */
+body.admin h1 {
+  float: left;
+  font-size: 3em;
+  line-height: 1em;
+  margin-top: -0.16em;
+  margin-left: -0.12em;
+  padding-bottom: 25px;
+  color: #47474c;
+  text-shadow: #ccccdd 0 1px 1px;
 }
 /* line 23, src/partials/_admin.scss */
-body.admin .container {
-  width: 960px;
-  margin: 0 auto;
-  background-color: rgba(255, 128, 128, 0.3);
+body.admin ul#account {
+  margin-right: 0.1em;
+  display: block;
+  float: right;
 }
-/* line 29, src/partials/_admin.scss */
-body.admin #top {
-  background: #a0bec9;
-  border-bottom: 1px solid #99b7c2;
+/* line 27, src/partials/_admin.scss */
+body.admin ul#account li {
+  display: block;
+  float: left;
+  text-align: right;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #2fb7c4;
+  text-shadow: #ccccdd 0 1px 1px;
 }
-/* line 33, src/partials/_admin.scss */
-body.admin #top .container h1 {
-  font-size: 2em;
-  margin-left: -0.06em;
-  line-height: 2.1em;
-  text-shadow: #c5e3ee 0 1px 1px;
+/* line 36, src/partials/_admin.scss */
+body.admin ul#account li.first {
+  border-left: 0;
 }
-/* line 42, src/partials/_admin.scss */
-body.admin #tabbar {
-  background: #bed3d8;
-  border-top: 1px solid #c5dadf;
-  padding: 5px 0;
+/* line 37, src/partials/_admin.scss */
+body.admin ul#account li a {
+  color: #474747;
 }
-/* line 47, src/partials/_admin.scss */
-body.admin #tabbar ul#navigation {
+/* line 44, src/partials/_admin.scss */
+body.admin ul#navigation {
+  clear: both;
   display: block;
   *zoom: 1;
   margin-top: 10px;
 }
 /* line 22, ../../../../../../../home/rhoward/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-body.admin #tabbar ul#navigation:after {
+body.admin ul#navigation:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -156,54 +176,74 @@ body.admin #tabbar ul#navigation:after {
   overflow: hidden;
   visibility: hidden;
 }
-/* line 52, src/partials/_admin.scss */
-body.admin #tabbar ul#navigation li {
+/* line 50, src/partials/_admin.scss */
+body.admin ul#navigation li {
   display: block;
   float: left;
 }
-/* line 55, src/partials/_admin.scss */
-body.admin #tabbar ul#navigation li a {
+/* line 53, src/partials/_admin.scss */
+body.admin ul#navigation li a {
   display: block;
-  padding: 6px 11px 5px;
-  height: 20px;
-  line-height: 20px;
+  padding: 0 18px;
+  height: 40px;
+  line-height: 40px;
   position: relative;
-  top: -3px;
-  font-size: 1em;
+  top: 1px;
+  font-size: 1.1em;
   font-family: 'CantarellBold';
   color: #47474c;
-  text-shadow: #d3e8ed 0 1px 1px;
+  border-top: 1px solid #44ccd9;
+  border-left: 1px solid #44ccd9;
+  border-right: 1px solid #44ccd9;
+  text-shadow: #ccccdd 0 1px 1px;
 }
-/* line 67, src/partials/_admin.scss */
-body.admin #tabbar ul#navigation li.selected a {
-  padding: 5px 10px;
+/* line 68, src/partials/_admin.scss */
+body.admin ul#navigation li.selected a {
   color: #474747;
-  background: #fdfdfd;
-  border-top: 1px solid #b8cbd1;
-  border-left: 1px solid #b8cbd1;
-  border-right: 1px solid #b8cbd1;
-  -moz-border-radius-topleft: 10px;
-  -webkit-border-top-left-radius: 10px;
-  -o-border-top-left-radius: 10px;
-  -ms-border-top-left-radius: 10px;
-  -khtml-border-top-left-radius: 10px;
-  border-top-left-radius: 10px;
-  -moz-border-radius-topright: 10px;
-  -webkit-border-top-right-radius: 10px;
-  -o-border-top-right-radius: 10px;
-  -ms-border-top-right-radius: 10px;
-  -khtml-border-top-right-radius: 10px;
-  border-top-right-radius: 10px;
+  background: #fff8ed;
+  border-top: 1px solid #aaa398;
+  border-left: 1px solid #aaa398;
+  border-right: 1px solid #aaa398;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -o-border-top-left-radius: 6px;
+  -ms-border-top-left-radius: 6px;
+  -khtml-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -o-border-top-right-radius: 6px;
+  -ms-border-top-right-radius: 6px;
+  -khtml-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  text-shadow: none;
 }
 /* line 80, src/partials/_admin.scss */
-body.admin #main {
-  background: #ebf5f6;
-  border-top: 1px solid #b8cbd1;
-  border-bottom: 1px solid #b8cbd1;
+body.admin #content {
   *zoom: 1;
+  background: #fff8ed;
+  border: 1px solid #aaa398;
+  -moz-border-radius-topright: 18px;
+  -webkit-border-top-right-radius: 18px;
+  -o-border-top-right-radius: 18px;
+  -ms-border-top-right-radius: 18px;
+  -khtml-border-top-right-radius: 18px;
+  border-top-right-radius: 18px;
+  -moz-border-radius-bottomleft: 18px;
+  -webkit-border-bottom-left-radius: 18px;
+  -o-border-bottom-left-radius: 18px;
+  -ms-border-bottom-left-radius: 18px;
+  -khtml-border-bottom-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -o-border-bottom-right-radius: 6px;
+  -ms-border-bottom-right-radius: 6px;
+  -khtml-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 /* line 22, ../../../../../../../home/rhoward/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-body.admin #main:after {
+body.admin #content:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -211,72 +251,82 @@ body.admin #main:after {
   overflow: hidden;
   visibility: hidden;
 }
-/* line 86, src/partials/_admin.scss */
-body.admin #main #content {
-  background-color: rgba(128, 255, 128, 0.3);
+/* line 88, src/partials/_admin.scss */
+body.admin #content .main {
+  padding: 15px 18px;
+  min-height: 200px;
+}
+/* line 92, src/partials/_admin.scss */
+body.admin #content.has-sidebar .main {
   float: left;
-  width: 70%;
+  width: 656px;
 }
-/* line 90, src/partials/_admin.scss */
-body.admin #main #content .overlap {
-  background: #fdfdfd;
-  background-color: rgba(128, 255, 128, 0.3);
-  -moz-border-radius-topright: 10px;
-  -webkit-border-top-right-radius: 10px;
-  -o-border-top-right-radius: 10px;
-  -ms-border-top-right-radius: 10px;
-  -khtml-border-top-right-radius: 10px;
-  border-top-right-radius: 10px;
-  -moz-border-radius-bottomright: 10px;
-  -webkit-border-bottom-right-radius: 10px;
-  -o-border-bottom-right-radius: 10px;
-  -ms-border-bottom-right-radius: 10px;
-  -khtml-border-bottom-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  margin: -10px -10px -10px 0;
-  border-top: 1px solid #b8cbd1;
-  border-right: 1px solid #b8cbd1;
-  border-bottom: 1px solid #b8cbd1;
-}
-/* line 99, src/partials/_admin.scss */
-body.admin #main #content .container {
-  width: 680px;
-  margin: 10px 10px 10px auto;
-  min-height: 500px;
-  padding: 20px 20px 20px 0;
-}
-/* line 107, src/partials/_admin.scss */
-body.admin #main #sidebar {
+/* line 98, src/partials/_admin.scss */
+body.admin #content .sidebar {
   float: right;
-  width: 30%;
-  background: #ebf5f6;
-  background-color: rgba(128, 128, 255, 0.3);
-}
-/* line 113, src/partials/_admin.scss */
-body.admin #main #sidebar .container {
   width: 230px;
-  margin: 0 auto 0 10px;
-  padding: 20px 0 20px 20px;
+  padding: 15px 18px;
+  background: #e3ddd3;
+  -moz-border-radius-topright: 18px;
+  -webkit-border-top-right-radius: 18px;
+  -o-border-top-right-radius: 18px;
+  -ms-border-top-right-radius: 18px;
+  -khtml-border-top-right-radius: 18px;
+  border-top-right-radius: 18px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -o-border-bottom-right-radius: 6px;
+  -ms-border-bottom-right-radius: 6px;
+  -khtml-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  min-height: 200px;
 }
-/* line 117, src/partials/_admin.scss */
-body.admin #main #sidebar .container h3 {
-  padding-top: 0.85em;
-}
-/* line 124, src/partials/_admin.scss */
-body.admin #main h2 {
+/* line 109, src/partials/_admin.scss */
+body.admin #content h2 {
   font-size: 2.5em;
   line-height: 1em;
   padding-bottom: 0.6em;
   margin-left: -0.1em;
 }
-/* line 130, src/partials/_admin.scss */
-body.admin #main h3 {
+/* line 115, src/partials/_admin.scss */
+body.admin #content h3 {
   font-size: 1.3em;
   margin-left: -0.05em;
   padding-bottom: 0.6em;
 }
-/* line 139, src/partials/_admin.scss */
-body.admin #footer .container {
-  margin-top: 10px;
-  padding: 20px 0;
+/* line 123, src/partials/_admin.scss */
+body.admin #footer {
+  font-size: 0.8em;
+  padding-left: 18px;
+  line-height: 2.5em;
+  color: #008895;
+}
+/* line 128, src/partials/_admin.scss */
+body.admin #footer .legal {
+  float: right;
+  width: 40%;
+  margin-right: -0.15em;
+  text-align: right;
+}
+/* line 134, src/partials/_admin.scss */
+body.admin #footer a {
+  color: #474747;
+}
+/* line 136, src/partials/_admin.scss */
+body.admin #footer a:hover, body.admin #footer a:active {
+  border-bottom: 1px solid #474747;
+}
+
+/* line 3, src/partials/_process.scss */
+body.process input#terms {
+  font-size: 1.4em;
+  line-height: 1em;
+  padding: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #474747;
 }

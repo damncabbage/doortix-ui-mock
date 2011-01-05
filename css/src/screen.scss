@@ -4,7 +4,22 @@
 @import "compass/css3";
 
 /* Global Vars */
+
+/* http://www.colourlovers.com/palette/46688/fresh_cut_day */
+//$colorBodyBG: #47D6E3;
+$colorBodyBG: #44CCD9;
+$colorContentBG: #FFF8ED;
+$colorSidebarBG: #E3DDD3;
+
+$colorContentBorder: $colorContentBG - #555;
+//#00A8C6;
+
 $colorText: #474747;
+
+$radiusSharp: 6px;
+$radiusBlunt: 18px;
+
+$gutter: 18px;
 
 
 /* Global Styles */
@@ -15,14 +30,23 @@ body {
 	font-size: 0.8em;
 	line-height: 1.3em;
 	color: $colorText;
+	background-color: $colorBodyBG;
+	background-image: image_url('bg.pattern4.png');
 }
 a {
 	text-decoration: none;
+	&:focus { outline: 1px dotted; }
 }
 h1,h2,h3,h4,h5 {
 	font-family: 'CantarellBold';
 }
 
+/* Helpers */
+@mixin letter-press {
+	//@include text-shadow($colorBodyBG + #151515, 0, 1px, 1px);
+	@include text-shadow(#ccd, 0, 1px, 1px);
+}
 
 /* Partials for different pages */
 @import "partials/admin";
+@import "partials/process";

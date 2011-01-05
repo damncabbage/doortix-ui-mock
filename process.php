@@ -7,48 +7,33 @@
 </head>
 <body class="admin process">
 
-	<div id="top">
-		<div class="container">
-			<h1>SquidTix</h1>
-			<!-- TODO: Login -->
-		</div>
-	</div>
+	<div id="wrapper">
+		<h1>SquidTix</h1>
+		<ul id="account">
+			<li class="first">Hey there, <span class="user">Samantha</span></li>
+			<li><a href="#">Logout</a></li>
+		</ul>
 
-	<div id="tabbar">
-		<div class="container">
-			<ul id="navigation">
-				<li class="selected"><a href="process.php">Guest Checkin</a></li>
-				<li><a href="status.php">How Are We Doing?</a></li>
-			</ul>
-		</div>
-	</div>
+		<ul id="navigation">
+			<li class="first selected"><a href="process.php">Guest Check-In</a></li>
+			<li><a href="status.php">How Are We Doing?</a></li>
+		</ul>
 
-	<div id="main">
-		<div id="sidebar">
-			<div class="container">
+		<div id="content" class="has-sidebar">
+			<div class="main">
+				<h2>Scan or Search</h2>
+				<form action="process.html" method="post">
+					<input name="terms" id="terms" type="text" class="text" />
+				</form>
+			</div>
+			<div class="sidebar">
 				<h3>Help!</h3>
 				<p>Don't know what to do?</p>
 			</div>
 		</div>
 
-		<div id="content">
-			<div class="overlap">
-				<div class="container">
-
-					<h2>Scan or Search</h2>
-					<form action="process.html" method="post">
-						<input name="terms" id="terms" type="text" class="text" />
-					</form>
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="footer">
-		<div class="container">
-			<h4>Have Some Nav</h4>
-			<p>It's good for you.</p>
+		<div id="footer">
+			<span class="legal">Brought to you by <a href="http://robhoward.id.au">Rob Howard</a>, broadcasting to you live from the <a href="http://en.wikipedia.org/wiki/2011">Future</a>.</span>
 		</div>
 	</div>
 

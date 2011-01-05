@@ -1,123 +1,108 @@
 
 body.admin {
 
-	/* TODO: Move palette out to global */
-	$colorFooterBG: #606060;
-	$colorContentBG: #fdfdfd;
-	$colorContentBorder: #b8cbd1;
-	$colorSideBarBG: #ebf5f6;
-	$colorTabBarBG: #bed3d8;
-	$colorTopBarBG: #a0bec9;
-
 	$fullWidth: 960px;
-	$contentWidth: 680px;
-	$sideBarWidth: 230px;
+	$sidebarWidth: 230px;
 
-	$contentOverlap: 10px;
-
-	$vertBoxInset: 20px; 
-	$gutter: 20px;
-
-	background: $colorFooterBG;
-
-	.container {
+	#wrapper {
 		width: $fullWidth;
-		margin: 0 auto;
-		background-color: rgba(255,128,128,0.3);
+		margin: 25px auto;
+	}
+	
+	h1 {
+		float: left;
+		font-size: 3em;
+		line-height: 1em;
+		margin-top: -0.16em;
+		margin-left: -0.12em;
+		padding-bottom: 25px;
+		color: $colorText + #000005;
+		@include letter-press;
 	}
 
-	#top {
-		background: $colorTopBarBG;
-		border-bottom: 1px solid ($colorTopBarBG - #070707);
-		.container {
-			h1 {
-				font-size: 2em;
-				margin-left: -0.06em;
-				line-height: 2.1em;
-				@include text-shadow($colorTopBarBG + #252525, 0, 1px, 1px);
-			}
-		}
-	}
-
-	#tabbar {
-		background: $colorTabBarBG;
-		border-top: 1px solid ($colorTabBarBG + #070707);
-		padding: 5px 0;
-
-		ul#navigation {
+	ul#account {
+		margin-right: 0.1em;
+		display: block;
+		float: right;
+		li {
 			display: block;
-			@include pie-clearfix;
-			margin-top: 10px;
+			float: left;
+			text-align: right;
+			margin-left: 10px;
+			padding-left: 10px;
+			border-left: 1px solid ($colorBodyBG - #151515);
+			@include letter-press;
 
-			li {
-				display: block;
-				float: left;
-				a {
-					display: block;
-					padding: 6px 11px 5px;
-					height: 20px;
-					line-height: 20px;
-					position: relative;
-					top: -3px;
-					font-size: 1em;
-					font-family: 'CantarellBold';
-					color: $colorText + #000005;
-					@include text-shadow($colorTabBarBG + #151515, 0, 1px, 1px);
-				}
-				&.selected a {
-					padding: 5px 10px;
-					color: $colorText;
-					background: $colorContentBG;
-					border-top: 1px solid $colorContentBorder;
-					border-left: 1px solid $colorContentBorder;
-					border-right: 1px solid $colorContentBorder;
-					@include border-top-radius($contentOverlap);
-				}
+			&.first { border-left: 0; }
+			a {
+				color: $colorText;
 			}
 		}
 	}
 
-	#main {
-		background: $colorSideBarBG;
-		border-top: 1px solid $colorContentBorder;
-		border-bottom: 1px solid $colorContentBorder;
-		@include pie-clearfix;
 
-		#content {
-			background-color: rgba(128,255,128,0.3);
+	ul#navigation {
+		clear: both;
+		display: block;
+		@include pie-clearfix;
+		margin-top: 10px;
+
+		li {
+			display: block;
 			float: left;
-			width: 70%;
-			.overlap {
-				background: $colorContentBG;
-			background-color: rgba(128,255,128,0.3);
-				@include border-right-radius($contentOverlap);
-				margin: -#{$contentOverlap} -#{$contentOverlap} -#{$contentOverlap} 0;
-				border-top: 1px solid $colorContentBorder;
-				border-right: 1px solid $colorContentBorder;
-				border-bottom: 1px solid $colorContentBorder;
+			a {
+				display: block;
+				padding: 0 $gutter;
+				height: 40px;
+				line-height: 40px;
+				position: relative;
+				top: 1px;
+				font-size: 1.1em;
+				font-family: 'CantarellBold';
+				color: $colorText + #000005;
+				border-top: 1px solid $colorBodyBG;
+				border-left: 1px solid $colorBodyBG;
+				border-right: 1px solid $colorBodyBG;
+				@include letter-press;
 			}
-			.container {
-				width: $contentWidth;
-				margin: $contentOverlap $contentOverlap $contentOverlap auto;
-				min-height: 500px;
-				padding: $vertBoxInset $gutter $vertBoxInset 0;
+			&.selected a {
+				color: $colorText;
+				background: $colorContentBG;
+				border-top: 1px solid $colorContentBorder;
+				border-left: 1px solid $colorContentBorder;
+				border-right: 1px solid $colorContentBorder;
+				@include border-top-radius($radiusSharp);
+				@include text-shadow(none);
 			}
 		}
+	}
 
-		#sidebar {
+	#content {
+		@include pie-clearfix;
+		background: $colorContentBG;
+		border: 1px solid $colorContentBorder;
+		@include border-top-right-radius($radiusBlunt);
+		@include border-bottom-left-radius($radiusBlunt);
+		@include border-bottom-right-radius($radiusSharp);
+
+		.main {
+			padding: 15px $gutter;
+			min-height: 200px;
+		}
+		&.has-sidebar .main {
+			float: left;
+			// Sidebar gutters + Main gutters + 2px #content border
+			width: $fullWidth - $sidebarWidth - ($gutter*4) - 2px;
+		}
+
+		.sidebar {
 			float: right;
-			width: 30%;
-			background: $colorSideBarBG;
-			background-color: rgba(128,128,255,0.3);
-
-			.container {
-				width: $sideBarWidth;
-				margin: 0 auto 0 $contentOverlap;
-				padding: $vertBoxInset 0 $vertBoxInset $gutter;
-				h3 {
-					padding-top: 0.85em;
-				}
-			}
+			width: $sidebarWidth;
+			padding: 15px $gutter;
+			background: $colorSidebarBG;
+			@include border-top-right-radius($radiusBlunt);
+			@include border-bottom-right-radius($radiusSharp);
+			min-height: 200px;
 		}
 
 
@@ -136,11 +121,22 @@ body.admin {
 
 
 	#footer {
-		.container {
-			margin-top: $contentOverlap;
-			padding: $vertBoxInset 0;
+		font-size: 0.8em;
+		padding-left: $gutter;
+		line-height: 2.5em;
+		color: $colorBodyBG - #444;
+		.legal {
+			float: right;
+			width: 40%;
+			margin-right: -0.15em;
+			text-align: right;
+		}
+		a {
+			color: $colorText;
+			&:hover,&:active {
+				border-bottom: 1px solid $colorText;
+			}
 		}
 	}
-
 
 }
