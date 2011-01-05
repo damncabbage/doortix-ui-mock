@@ -52,22 +52,21 @@ body.admin {
 			float: left;
 			a {
 				display: block;
-				padding: 0 $gutter;
+				padding: 1px $gutter 0;
 				height: 40px;
 				line-height: 40px;
 				position: relative;
 				top: 1px;
-				font-size: 1.1em;
-				font-family: 'CantarellBold';
+				font-size: 1em;
+				font-weight: bold;
 				color: $colorText + #000005;
-				border-top: 1px solid $colorBodyBG;
-				border-left: 1px solid $colorBodyBG;
-				border-right: 1px solid $colorBodyBG;
+				border: 0;
 				@include letter-press;
 			}
 			&.selected a {
 				color: $colorText;
 				background: $colorContentBG;
+				padding-top: 0;
 				border-top: 1px solid $colorContentBorder;
 				border-left: 1px solid $colorContentBorder;
 				border-right: 1px solid $colorContentBorder;
@@ -127,7 +126,7 @@ body.admin {
 		color: $colorBodyBG - #444;
 		.legal {
 			float: right;
-			width: 40%;
+			width: 50%;
 			margin-right: -0.15em;
 			text-align: right;
 		}

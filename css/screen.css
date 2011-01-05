@@ -94,7 +94,7 @@ a img {
   font-style: normal;
 }
 
-/* line 28, src/screen.scss */
+/* line 29, src/screen.scss */
 body {
   font-family: Verdana, sans-serif;
   font-size: 0.8em;
@@ -104,16 +104,16 @@ body {
   background-image: url('/squidtix/images/bg.pattern4.png?1294175857');
 }
 
-/* line 36, src/screen.scss */
+/* line 37, src/screen.scss */
 a {
   text-decoration: none;
 }
-/* line 38, src/screen.scss */
+/* line 39, src/screen.scss */
 a:focus {
   outline: 1px dotted;
 }
 
-/* line 40, src/screen.scss */
+/* line 41, src/screen.scss */
 h1, h2, h3, h4, h5 {
   font-family: 'CantarellBold';
 }
@@ -184,26 +184,25 @@ body.admin ul#navigation li {
 /* line 53, src/partials/_admin.scss */
 body.admin ul#navigation li a {
   display: block;
-  padding: 0 18px;
+  padding: 1px 18px 0;
   height: 40px;
   line-height: 40px;
   position: relative;
   top: 1px;
-  font-size: 1.1em;
-  font-family: 'CantarellBold';
+  font-size: 1em;
+  font-weight: bold;
   color: #47474c;
-  border-top: 1px solid #44ccd9;
-  border-left: 1px solid #44ccd9;
-  border-right: 1px solid #44ccd9;
+  border: 0;
   text-shadow: #ccccdd 0 1px 1px;
 }
-/* line 68, src/partials/_admin.scss */
+/* line 66, src/partials/_admin.scss */
 body.admin ul#navigation li.selected a {
   color: #474747;
-  background: #fff8ed;
-  border-top: 1px solid #aaa398;
-  border-left: 1px solid #aaa398;
-  border-right: 1px solid #aaa398;
+  background: #fffaf6;
+  padding-top: 0;
+  border-top: 1px solid #aaa5a1;
+  border-left: 1px solid #aaa5a1;
+  border-right: 1px solid #aaa5a1;
   -moz-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
   -o-border-top-left-radius: 6px;
@@ -218,11 +217,11 @@ body.admin ul#navigation li.selected a {
   border-top-right-radius: 6px;
   text-shadow: none;
 }
-/* line 80, src/partials/_admin.scss */
+/* line 79, src/partials/_admin.scss */
 body.admin #content {
   *zoom: 1;
-  background: #fff8ed;
-  border: 1px solid #aaa398;
+  background: #fffaf6;
+  border: 1px solid #aaa5a1;
   -moz-border-radius-topright: 18px;
   -webkit-border-top-right-radius: 18px;
   -o-border-top-right-radius: 18px;
@@ -251,17 +250,17 @@ body.admin #content:after {
   overflow: hidden;
   visibility: hidden;
 }
-/* line 88, src/partials/_admin.scss */
+/* line 87, src/partials/_admin.scss */
 body.admin #content .main {
   padding: 15px 18px;
   min-height: 200px;
 }
-/* line 92, src/partials/_admin.scss */
+/* line 91, src/partials/_admin.scss */
 body.admin #content.has-sidebar .main {
   float: left;
   width: 656px;
 }
-/* line 98, src/partials/_admin.scss */
+/* line 97, src/partials/_admin.scss */
 body.admin #content .sidebar {
   float: right;
   width: 230px;
@@ -281,38 +280,38 @@ body.admin #content .sidebar {
   border-bottom-right-radius: 6px;
   min-height: 200px;
 }
-/* line 109, src/partials/_admin.scss */
+/* line 108, src/partials/_admin.scss */
 body.admin #content h2 {
   font-size: 2.5em;
   line-height: 1em;
   padding-bottom: 0.6em;
   margin-left: -0.1em;
 }
-/* line 115, src/partials/_admin.scss */
+/* line 114, src/partials/_admin.scss */
 body.admin #content h3 {
   font-size: 1.3em;
   margin-left: -0.05em;
   padding-bottom: 0.6em;
 }
-/* line 123, src/partials/_admin.scss */
+/* line 122, src/partials/_admin.scss */
 body.admin #footer {
   font-size: 0.8em;
   padding-left: 18px;
   line-height: 2.5em;
   color: #008895;
 }
-/* line 128, src/partials/_admin.scss */
+/* line 127, src/partials/_admin.scss */
 body.admin #footer .legal {
   float: right;
-  width: 40%;
+  width: 50%;
   margin-right: -0.15em;
   text-align: right;
 }
-/* line 134, src/partials/_admin.scss */
+/* line 133, src/partials/_admin.scss */
 body.admin #footer a {
   color: #474747;
 }
-/* line 136, src/partials/_admin.scss */
+/* line 135, src/partials/_admin.scss */
 body.admin #footer a:hover, body.admin #footer a:active {
   border-bottom: 1px solid #474747;
 }
