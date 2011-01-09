@@ -7,33 +7,54 @@
 </head>
 <body class="admin process">
 
-	<div id="wrapper">
-		<h1>SquidTix</h1>
-		<ul id="account">
-			<li class="first">Hey there, <span class="user">Samantha</span></li>
-			<li><a href="#">Logout</a></li>
-		</ul>
 
-		<ul id="navigation">
-			<li class="first selected"><a href="process.php">Guest Check-In</a></li>
-			<li><a href="status.php">How Are We Doing?</a></li>
-		</ul>
+	<div id="header">
+		<div class="container">
+			<h1>SquidTix</h1>
+			<ul class="account">
+				<li class="first">Hey there, <span class="user">Samantha</span></li>
+				<li><a href="#">Logout</a></li>
+			</ul>
 
-		<div id="content" class="has-sidebar">
-			<div class="main">
-				<h2>Scan or Search</h2>
+			<ul class="navigation">
+				<li class="first selected"><a href="process.php">Guest Check-In</a></li>
+				<li><a href="status.php">How Are We Doing?</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="content">
+		<div class="container">
+		
+			<div id="search" class="panel">
 				<form action="process.html" method="post">
-					<input name="terms" id="terms" type="text" class="text" />
+					<span class="search">
+						<input name="search" id="search" type="text" class="text" />
+						<input name="submit" value="Go" type="submit" class="button" />
+					</span>
+					<div class="info">
+						<span class="action">Scan</span>
+						<span class="explanation">the barcode on an attendee's ticket</span>
+					</div>
+					<div class="info">
+						<span class="action">Search</span>
+						<span class="explanation">for an attendee by name, address or email.</span>
+					</div>
 				</form>
 			</div>
-			<div class="sidebar">
-				<h3>Help!</h3>
-				<p>Don't know what to do?</p>
-			</div>
-		</div>
 
-		<div id="footer">
-			<span class="legal">Brought to you by <a href="http://robhoward.id.au">Rob Howard</a>, broadcasting to you live from the <a href="http://en.wikipedia.org/wiki/2011">Future</a>.</span>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="container">
+			<div class="status">
+				<span class="checked">33</span>
+				<span class="of">of</span>
+				<span class="total">2045</span>
+				<span class="description">attendees checked in</span>
+			</div>
+			<span class="legal">Brought you by <a href="http://robhoward.id.au">Rob Howard</a>, notepad scribblings and bad country music.</span>
 		</div>
 	</div>
 

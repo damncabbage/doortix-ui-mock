@@ -2,108 +2,110 @@
 body.admin {
 
 	$fullWidth: 960px;
-	$sidebarWidth: 230px;
+	background: $colorFooterBG;
 
-	#wrapper {
+	.container {
 		width: $fullWidth;
-		margin: 25px auto;
+		margin: 0 auto;
+		position: relative;
 	}
 	
-	h1 {
-		float: left;
-		font-size: 3em;
-		line-height: 1em;
-		margin-top: -0.16em;
-		margin-left: -0.12em;
-		padding-bottom: 25px;
-		color: $colorText + #000005;
-		@include letter-press;
-	}
+	#header {
+		background-color: $colorBodyBG;
+		background-image: image_url('bg.pattern4.png');
+		.container {
+			padding-top: 15px;
+			@include pie-clearfix;
+		}
 
-	ul#account {
-		margin-right: 0.1em;
-		display: block;
-		float: right;
-		li {
+		h1 {
+			position: absolute;
 			display: block;
-			float: left;
-			text-align: right;
-			margin-left: 10px;
-			padding-left: 10px;
-			border-left: 1px solid ($colorBodyBG - #151515);
+			left: 0;
+			font-size: 4em;
+			line-height: 1em;
+			margin-top: -0.16em;
+			margin-left: -0.12em;
+			color: $colorText + #000005;
 			@include letter-press;
+		}
 
-			&.first { border-left: 0; }
-			a {
-				color: $colorText;
+		ul.account {
+			margin-right: 0.1em;
+			display: block;
+			float: right;
+			li {
+				display: block;
+				float: left;
+				text-align: right;
+				margin-left: 10px;
+				padding-left: 10px;
+				border-left: 1px solid ($colorBodyBG - #151515);
+				@include letter-press;
+
+				&.first { border-left: 0; }
+				a {
+					color: $colorText;
+				}
 			}
 		}
-	}
 
 
-	ul#navigation {
-		clear: both;
-		display: block;
-		@include pie-clearfix;
-		margin-top: 10px;
-
-		li {
+		ul.navigation {
+			clear: right;
 			display: block;
-			float: left;
-			a {
+			float: right;
+			margin-top: 10px;
+
+			li {
 				display: block;
-				padding: 1px $gutter 0;
-				height: 40px;
-				line-height: 40px;
+				float: left;
+				margin-left: 5px;
 				position: relative;
 				top: 1px;
-				font-size: 1em;
-				font-weight: bold;
-				color: $colorText + #000005;
-				border: 0;
-				@include letter-press;
-			}
-			&.selected a {
-				color: $colorText;
-				background: $colorContentBG;
-				padding-top: 0;
-				border-top: 1px solid $colorContentBorder;
-				border-left: 1px solid $colorContentBorder;
-				border-right: 1px solid $colorContentBorder;
 				@include border-top-radius($radiusSharp);
-				@include text-shadow(none);
+				z-index: 1;
+
+				a {
+					display: block;
+					padding: 1px $gutter 0;
+					height: 30px;
+					line-height: 30px;
+					font-size: 1em;
+					font-weight: bold;
+					color: $colorText + #000005;
+					border: 0;
+					@include letter-press;
+				}
+				&.selected {
+					@include box-shadow(#aac0cc, 0, -3px, 8px);
+					a {
+						color: $colorText;
+						background: $colorContentBG;
+						padding-top: 0;
+						border-top: 1px solid $colorContentBorder;
+						border-left: 1px solid $colorContentBorder;
+						border-right: 1px solid $colorContentBorder;
+						@include border-top-radius($radiusSharp);
+						@include text-shadow(none);
+					}
+				}
 			}
 		}
 	}
 
 	#content {
-		@include pie-clearfix;
-		background: $colorContentBG;
-		border: 1px solid $colorContentBorder;
-		@include border-top-right-radius($radiusBlunt);
-		@include border-bottom-left-radius($radiusBlunt);
-		@include border-bottom-right-radius($radiusSharp);
+		clear: both;
+		background-color: $colorContentBG;
+		border-top: 1px solid $colorContentBorder;
+		border-bottom: 1px solid $colorContentBorder;
+		@include box-shadow(#88a0aa, 0, 0, 10px);
+		z-index: 5;
 
-		.main {
-			padding: 15px $gutter;
+		.panel {
+			padding: 15px 0;
 			min-height: 200px;
 		}
-		&.has-sidebar .main {
-			float: left;
-			// Sidebar gutters + Main gutters + 2px #content border
-			width: $fullWidth - $sidebarWidth - ($gutter*4) - 2px;
-		}
-
-		.sidebar {
-			float: right;
-			width: $sidebarWidth;
-			padding: 15px $gutter;
-			background: $colorSidebarBG;
-			@include border-top-right-radius($radiusBlunt);
-			@include border-bottom-right-radius($radiusSharp);
-			min-height: 200px;
-		}
-
 
 		h2 {
 			font-size: 2.5em;
@@ -120,20 +122,20 @@ body.admin {
 
 
 	#footer {
-		font-size: 0.8em;
-		padding-left: $gutter;
+		font-size: 0.85em;
 		line-height: 2.5em;
-		color: $colorBodyBG - #444;
+		color: $colorFooterBG + #aaa;
+		background-color: $colorFooterBG;
+
 		.legal {
-			float: right;
-			width: 50%;
+			display: block;
 			margin-right: -0.15em;
 			text-align: right;
 		}
 		a {
-			color: $colorText;
+			color: $colorBodyBG;
 			&:hover,&:active {
-				border-bottom: 1px solid $colorText;
+				border-bottom: 1px solid $colorBodyBG;
 			}
 		}
 	}

@@ -5,12 +5,10 @@
 
 /* Global Vars */
 
-/* http://www.colourlovers.com/palette/46688/fresh_cut_day */
-//$colorBodyBG: #47D6E3;
 $colorBodyBG: #44CCD9;
-//$colorContentBG: #FFF8ED;
-$colorContentBG: #FFFAF6;
-$colorSidebarBG: #E3DDD3;
+//$colorContentBG: #FFFAF6;
+$colorContentBG: #fffefb;
+$colorFooterBG: #E3DDD3 - #aaa;
 
 $colorContentBorder: $colorContentBG - #555;
 //#00A8C6;
@@ -20,7 +18,7 @@ $colorText: #474747;
 $radiusSharp: 6px;
 $radiusBlunt: 18px;
 
-$gutter: 18px;
+$gutter: 20px;
 
 
 /* Global Styles */
@@ -31,8 +29,7 @@ body {
 	font-size: 0.8em;
 	line-height: 1.3em;
 	color: $colorText;
-	background-color: $colorBodyBG;
-	background-image: image_url('bg.pattern4.png');
+	background: #colorFooterBG;
 }
 a {
 	text-decoration: none;
