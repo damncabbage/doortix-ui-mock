@@ -1,0 +1,142 @@
+
+body.admin {
+	background: $colorFooterBG;
+
+	.container {
+		width: $fullWidth;
+		margin: 0 auto;
+		position: relative;
+	}
+	
+	#header {
+		background-color: $colorHeaderBG;
+		background-image: image_url('bg.pattern4.png');
+		.container {
+			padding-top: 15px;
+			@include pie-clearfix;
+		}
+
+		h1 {
+			position: absolute;
+			display: block;
+			left: 0;
+			font-size: 4em;
+			line-height: 1em;
+			margin-top: -0.16em;
+			margin-left: -0.12em;
+			color: $colorText + #000005;
+			@include letter-press;
+		}
+
+		ul.account {
+			margin-right: 0.1em;
+			display: block;
+			float: right;
+			li {
+				display: block;
+				float: left;
+				text-align: right;
+				margin-left: 10px;
+				padding-left: 10px;
+				border-left: 1px solid ($colorHeaderBG - #151515);
+				@include letter-press;
+
+				&.first { border-left: 0; }
+				a {
+					color: $colorText;
+				}
+			}
+		}
+
+
+		ul.navigation {
+			clear: right;
+			display: block;
+			float: right;
+			margin-top: 10px;
+
+			li {
+				display: block;
+				float: left;
+				margin-left: 5px;
+				position: relative;
+				top: 1px;
+				@include border-top-radius($radiusNeutral);
+				z-index: 1;
+
+				a {
+					display: block;
+					padding: 1px $gutter 0;
+					height: 30px;
+					line-height: 30px;
+					font-size: 1em;
+					font-weight: bold;
+					color: $colorText + #000005;
+					border: 0;
+					@include letter-press;
+				}
+				&.selected {
+					@include box-shadow($colorContentShadow, 0, -6px, 10px, -6px);
+					//@include box-shadow(#aac0cc, 0, -3px, 8px);
+					a {
+						color: $colorText;
+						background: $colorContentBG;
+						padding-top: 0;
+						border-top: 1px solid $colorContentBorder;
+						border-left: 1px solid $colorContentBorder;
+						border-right: 1px solid $colorContentBorder;
+						@include border-top-radius($radiusNeutral);
+						@include text-shadow(none);
+					}
+				}
+			}
+		}
+	}
+
+	#content {
+		clear: both;
+		background-color: $colorContentBG;
+		border-top: 1px solid $colorContentBorder;
+		border-bottom: 1px solid $colorContentBorder;
+		@include box-shadow($colorContentShadow, 0, 0, 10px);
+		z-index: 5;
+
+		.panel {
+			padding: 15px 0;
+			min-height: 200px;
+		}
+
+		h2 {
+			font-size: 2.5em;
+			line-height: 1em;
+			padding-bottom: 0.6em;
+			margin-left: -0.1em;
+		}
+		h3 {
+			font-size: 1.3em;
+			margin-left: -0.05em;
+			padding-bottom: 0.6em;
+		}
+	}
+
+
+	#footer {
+		font-size: 0.85em;
+		line-height: 2.5em;
+		color: $colorFooterBG + #aaa;
+		background-color: $colorFooterBG;
+
+		.legal {
+			display: block;
+			margin-right: -0.15em;
+			text-align: right;
+		}
+		a {
+			color: $colorHeaderBG;
+			&:hover,&:active {
+				border-bottom: 1px solid $colorHeaderBG;
+			}
+		}
+	}
+
+}

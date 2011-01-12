@@ -1,0 +1,52 @@
+
+@import "compass/reset";
+@import "compass/utilities";
+@import "compass/css3";
+
+/* Global Vars */
+
+$colorHeaderBG: #44CCD9;
+
+$colorContentBG: #fffefb;
+$colorContentBorder: $colorContentBG - #555;
+$colorContentShadow: $colorHeaderBG - #222; //#88a0aa;
+
+$colorFooterBG: #E3DDD3 - #aaa;
+
+$colorText: #474747;
+
+$radiusSharp: 3px;
+$radiusNeutral: 6px;
+$radiusBlunt: 12px;
+
+$gutter: 20px;
+
+$fullWidth: 960px;
+
+
+/* Global Styles */
+@import "partials/fonts";
+
+body {
+	font-family: Verdana, sans-serif;
+	font-size: 0.8em;
+	line-height: 1.3em;
+	color: $colorText;
+	background: $colorHeaderBG;
+}
+a {
+	text-decoration: none;
+	&:focus { outline: 1px dotted; }
+}
+h1,h2,h3,h4,h5 {
+	font-family: 'CantarellBold';
+}
+
+/* Helpers */
+@mixin letter-press {
+	@include text-shadow(#ccd, 0, 1px, 1px);
+}
+
+/* Partials for different pages */
+@import "partials/admin";
+@import "partials/process";
