@@ -28,9 +28,10 @@
 		
 			<div id="search" class="panel">
 				<form action="process.html" method="post">
-					<span class="search">
-						<input name="search" id="search" type="text" class="text" />
-						<input name="submit" value="Go" type="submit" class="button" />
+
+					<span class="form">
+						<input name="terms" id="terms" type="text" class="text" />
+						<input name="submit" value="Search" type="submit" class="button" />
 					</span>
 					<div class="info">
 						<span class="action">Scan</span>
@@ -40,6 +41,7 @@
 						<span class="action">Search</span>
 						<span class="explanation">for an attendee by name, address or email.</span>
 					</div>
+
 				</form>
 			</div>
 
@@ -54,7 +56,7 @@
 				<span class="total">2045</span>
 				<span class="description">attendees checked in</span>
 			</div>
-			<span class="legal">Brought you by <a href="http://robhoward.id.au">Rob Howard</a>, notepad scribblings and bad country music.</span>
+			<span class="legal">Brought you by <a href="http://robhoward.id.au">Rob Howard</a>, notepad scribblings and half a pack of Oreos.</span>
 		</div>
 	</div>
 

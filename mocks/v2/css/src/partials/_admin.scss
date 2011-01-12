@@ -1,7 +1,5 @@
 
 body.admin {
-
-	$fullWidth: 960px;
 	background: $colorFooterBG;
 
 	.container {
@@ -11,7 +9,7 @@ body.admin {
 	}
 	
 	#header {
-		background-color: $colorBodyBG;
+		background-color: $colorHeaderBG;
 		background-image: image_url('bg.pattern4.png');
 		.container {
 			padding-top: 15px;
@@ -40,7 +38,7 @@ body.admin {
 				text-align: right;
 				margin-left: 10px;
 				padding-left: 10px;
-				border-left: 1px solid ($colorBodyBG - #151515);
+				border-left: 1px solid ($colorHeaderBG - #151515);
 				@include letter-press;
 
 				&.first { border-left: 0; }
@@ -63,7 +61,7 @@ body.admin {
 				margin-left: 5px;
 				position: relative;
 				top: 1px;
-				@include border-top-radius($radiusSharp);
+				@include border-top-radius($radiusNeutral);
 				z-index: 1;
 
 				a {
@@ -78,7 +76,8 @@ body.admin {
 					@include letter-press;
 				}
 				&.selected {
-					@include box-shadow(#aac0cc, 0, -3px, 8px);
+					@include box-shadow($colorContentShadow, 0, -6px, 10px, -6px);
+					//@include box-shadow(#aac0cc, 0, -3px, 8px);
 					a {
 						color: $colorText;
 						background: $colorContentBG;
@@ -86,7 +85,7 @@ body.admin {
 						border-top: 1px solid $colorContentBorder;
 						border-left: 1px solid $colorContentBorder;
 						border-right: 1px solid $colorContentBorder;
-						@include border-top-radius($radiusSharp);
+						@include border-top-radius($radiusNeutral);
 						@include text-shadow(none);
 					}
 				}
@@ -99,7 +98,7 @@ body.admin {
 		background-color: $colorContentBG;
 		border-top: 1px solid $colorContentBorder;
 		border-bottom: 1px solid $colorContentBorder;
-		@include box-shadow(#88a0aa, 0, 0, 10px);
+		@include box-shadow($colorContentShadow, 0, 0, 10px);
 		z-index: 5;
 
 		.panel {
@@ -133,9 +132,9 @@ body.admin {
 			text-align: right;
 		}
 		a {
-			color: $colorBodyBG;
+			color: $colorHeaderBG;
 			&:hover,&:active {
-				border-bottom: 1px solid $colorBodyBG;
+				border-bottom: 1px solid $colorHeaderBG;
 			}
 		}
 	}

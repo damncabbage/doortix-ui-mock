@@ -1,4 +1,12 @@
 @font-face {
+	font-family: 'ChunkFiveRegular';
+	src: url('../fonts/Chunkfive-webfont.eot');
+	src: local('☺'), url('../fonts/Chunkfive-webfont.woff') format('woff'), url('../fonts/Chunkfive-webfont.ttf') format('truetype'), url('../fonts/Chunkfive-webfont.svg#webfont90E2uSjN') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
     font-family: 'CantarellRegular';
     src: url('Cantarell-Regular-webfont.eot');
     src: local('☺'), url('../fonts/Cantarell-Regular-webfont.woff') format('woff'), url('../fonts/Cantarell-Regular-webfont.ttf') format('truetype'), url('../fonts/Cantarell-Regular-webfont.svg#webfontABgg4EO0') format('svg');

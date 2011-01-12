@@ -5,20 +5,23 @@
 
 /* Global Vars */
 
-$colorBodyBG: #44CCD9;
-//$colorContentBG: #FFFAF6;
-$colorContentBG: #fffefb;
-$colorFooterBG: #E3DDD3 - #aaa;
+$colorHeaderBG: #44CCD9;
 
+$colorContentBG: #fffefb;
 $colorContentBorder: $colorContentBG - #555;
-//#00A8C6;
+$colorContentShadow: $colorHeaderBG - #222; //#88a0aa;
+
+$colorFooterBG: #E3DDD3 - #aaa;
 
 $colorText: #474747;
 
-$radiusSharp: 6px;
-$radiusBlunt: 18px;
+$radiusSharp: 3px;
+$radiusNeutral: 6px;
+$radiusBlunt: 12px;
 
 $gutter: 20px;
+
+$fullWidth: 960px;
 
 
 /* Global Styles */
@@ -29,7 +32,7 @@ body {
 	font-size: 0.8em;
 	line-height: 1.3em;
 	color: $colorText;
-	background: #colorFooterBG;
+	background: $colorHeaderBG;
 }
 a {
 	text-decoration: none;
@@ -41,7 +44,6 @@ h1,h2,h3,h4,h5 {
 
 /* Helpers */
 @mixin letter-press {
-	//@include text-shadow($colorBodyBG + #151515, 0, 1px, 1px);
 	@include text-shadow(#ccd, 0, 1px, 1px);
 }
 

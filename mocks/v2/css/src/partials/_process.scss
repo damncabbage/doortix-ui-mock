@@ -1,11 +1,42 @@
 body.process {
 
+	#search {
+		$formWidth: 600px;
+		$buttonWidth: 100px;
+
+		.form {
+			display: block;
+			width: $formWidth;
+			margin: 0 auto;
+			padding: 60px 0;
+			@include border-radius($radiusNeutral);
+			@include pie-clearfix;
+
+			.text, .button {
+				display: inline-block;
+				border: 1px solid $colorText;
+				font-size: 16px;
+			}
+			.text {
+				@include border-left-radius($radiusNeutral);
+				width: $formWidth - $buttonWidth - 7px - 20px;
+				height: 32px; line-height: 32px;
+				padding: 5px 10px;
+				float: left;
+			}
+			.button {
+				@include border-right-radius($radiusNeutral);
+				margin-left: 5px;
+				width: $buttonWidth;
+				height: 44px; line-height: 44px;
+				float: left;
+			}
+
+		}
+
+	}
+
 	input#terms {
-		font-size: 1.4em;
-		line-height: 1em;
-		padding: 5px;
-		@include border-radius(5px);
-		border: 1px solid $colorText;
 	}
 
 
