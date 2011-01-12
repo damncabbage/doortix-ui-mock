@@ -33,14 +33,12 @@
 						<input name="terms" id="terms" type="text" class="text" />
 						<input name="submit" value="Search" type="submit" class="button" />
 					</span>
-					<div class="info">
-						<span class="action">Scan</span>
-						<span class="explanation">the barcode on an attendee's ticket</span>
-					</div>
-					<div class="info">
-						<span class="action">Search</span>
-						<span class="explanation">for an attendee by name, address or email.</span>
-					</div>
+					<ul class="info">
+						<li><h2>Scan</h2>
+						    <span class="explanation">the barcode on an attendee's ticket.</span></li>
+						<li><h2>Search</h2>
+						<span class="explanation">for an attendee by name, address or email.</span></li>
+					</ul>
 
 				</form>
 			</div>

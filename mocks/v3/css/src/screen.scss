@@ -5,15 +5,21 @@
 
 /* Global Vars */
 
-$colorHeaderBG: #44CCD9;
+$colorWhite: #fffefb;
 
-$colorContentBG: #fffefb;
-$colorContentBorder: $colorContentBG - #555;
-$colorContentShadow: $colorHeaderBG - #222; //#88a0aa;
+$colorBaseMedium: #44CCD9;
+$colorBaseLight: lighten(desaturate($colorBaseMedium, 25%), 25%);
+$colorBaseHeavy: $colorBaseMedium - #222;
 
-$colorFooterBG: #E3DDD3 - #aaa;
+$colorGreyLight: $colorWhite - #555;
+$colorGreyHeavy: #E3DDD3 - #aaa;
+$colorGreyMedium: lighten(desaturate(#E3DDD3 - #aaa, 25%), 25%);
 
 $colorText: #474747;
+
+$colorFocusMedium: adjust-hue($colorBaseMedium, -110deg);
+$colorFocusLight: lighten(desaturate($colorFocusMedium, 25%), 25%);
+$colorFocusHeavy: darken(saturate($colorFocusMedium, 25%), 25%);
 
 $radiusSharp: 3px;
 $radiusNeutral: 6px;
@@ -32,7 +38,7 @@ body {
 	font-size: 0.8em;
 	line-height: 1.3em;
 	color: $colorText;
-	background: $colorHeaderBG;
+	background: $colorBaseMedium;
 }
 a {
 	text-decoration: none;
@@ -43,10 +49,32 @@ h1,h2,h3,h4,h5 {
 }
 
 /* Helpers */
+
+// Indent text into the background.
 @mixin letter-press {
 	@include text-shadow(#ccd, 0, 1px, 1px);
 }
 
+// Stop-gap before multiple shadow support in the next version of Compass.
+@mixin multi-box-shadow($shadow1, $shadow2: false, $shadow3: false, $shadow4: false) {
+	$full: $shadow1;
+	@if $shadow2 {
+		$full: $full + "," + $shadow2;
+	}
+	@if $shadow3 {
+		$full: $full + "," + $shadow3;
+	}
+	@if $shadow4 {
+		$full: $full + "," + $shadow4;
+	}
+	-moz-box-shadow: $full;
+	-webkit-box-shadow: $full;
+	-o-box-shadow: $full;
+	box-shadow: $full;
+}
+
+
 /* Partials for different pages */
+
 @import "partials/admin";
 @import "partials/process";

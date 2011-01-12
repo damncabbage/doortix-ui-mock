@@ -1,6 +1,6 @@
 
 body.admin {
-	background: $colorFooterBG;
+	background: $colorGreyHeavy;
 
 	.container {
 		width: $fullWidth;
@@ -9,7 +9,7 @@ body.admin {
 	}
 	
 	#header {
-		background-color: $colorHeaderBG;
+		background-color: $colorBaseMedium;
 		background-image: image_url('bg.pattern4.png');
 		.container {
 			@include pie-clearfix;
@@ -40,7 +40,7 @@ body.admin {
 				text-align: right;
 				margin-left: 10px;
 				padding-left: 10px;
-				border-left: 1px solid ($colorHeaderBG - #151515);
+				border-left: 1px solid ($colorBaseMedium - #151515);
 				@include letter-press;
 
 				&.first { border-left: 0; }
@@ -78,15 +78,15 @@ body.admin {
 					@include letter-press;
 				}
 				&.selected {
-					@include box-shadow($colorContentShadow, 0, -6px, 10px, -6px);
+					@include box-shadow($colorBaseHeavy, 0, -6px, 10px, -6px);
 					//@include box-shadow(#aac0cc, 0, -3px, 8px);
 					a {
 						color: $colorText;
-						background: $colorContentBG;
+						background: $colorWhite;
 						padding-top: 0;
-						border-top: 1px solid $colorContentBorder;
-						border-left: 1px solid $colorContentBorder;
-						border-right: 1px solid $colorContentBorder;
+						border-top: 1px solid $colorGreyLight;
+						border-left: 1px solid $colorGreyLight;
+						border-right: 1px solid $colorGreyLight;
 						@include border-top-radius($radiusNeutral);
 						@include text-shadow(none);
 					}
@@ -97,10 +97,10 @@ body.admin {
 
 	#content {
 		clear: both;
-		background-color: $colorContentBG;
-		border-top: 1px solid $colorContentBorder;
-		border-bottom: 1px solid $colorContentBorder;
-		@include box-shadow($colorContentShadow, 0, 0, 10px);
+		background-color: $colorWhite;
+		border-top: 1px solid $colorGreyLight;
+		border-bottom: 1px solid $colorGreyLight;
+		@include box-shadow($colorBaseHeavy, 0, 0, 10px);
 		z-index: 5;
 
 		.panel {
@@ -125,8 +125,8 @@ body.admin {
 	#footer {
 		font-size: 0.85em;
 		line-height: 2.5em;
-		color: $colorFooterBG + #aaa;
-		background-color: $colorFooterBG;
+		color: $colorGreyHeavy + #aaa;
+		background-color: $colorGreyHeavy;
 
 		.legal {
 			display: block;
@@ -134,9 +134,9 @@ body.admin {
 			text-align: right;
 		}
 		a {
-			color: $colorHeaderBG;
+			color: $colorBaseMedium;
 			&:hover,&:active {
-				border-bottom: 1px solid $colorHeaderBG;
+				border-bottom: 1px solid $colorBaseMedium;
 			}
 		}
 	}
