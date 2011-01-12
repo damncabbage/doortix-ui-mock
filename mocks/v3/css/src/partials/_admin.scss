@@ -12,8 +12,9 @@ body.admin {
 		background-color: $colorHeaderBG;
 		background-image: image_url('bg.pattern4.png');
 		.container {
-			padding-top: 15px;
 			@include pie-clearfix;
+			padding-top: 15px;
+			height: 62px; /* Maintain height when nav bar not present.*/
 		}
 
 		h1 {
@@ -22,8 +23,9 @@ body.admin {
 			left: 0;
 			font-size: 4em;
 			line-height: 1em;
-			margin-top: -0.16em;
-			margin-left: -0.12em;
+			padding-top: 0.05em;
+			margin-left: -0.04em; /* Align content below with the vertical
+			                         stroke of the "D" glyph. */
 			color: $colorText + #000005;
 			@include letter-press;
 		}
@@ -53,7 +55,7 @@ body.admin {
 			clear: right;
 			display: block;
 			float: right;
-			margin-top: 10px;
+			margin-top: 14px;
 
 			li {
 				display: block;

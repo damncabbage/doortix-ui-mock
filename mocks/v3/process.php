@@ -56,7 +56,7 @@
 				<span class="total">2045</span>
 				<span class="description">attendees checked in</span>
 			</div>
-			<span class="legal">Brought you by <a href="http://robhoward.id.au">Rob Howard</a>, notepad scribblings and half a pack of Oreos.</span>
+			<span class="legal">Brought you by <a href="http://robhoward.id.au">Rob Howard</a>, Earl Grey, and bad country music.</span>
 		</div>
 	</div>
 

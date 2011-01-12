@@ -121,7 +121,7 @@ a:focus {
 
 /* line 41, src/screen.scss */
 h1, h2, h3, h4, h5 {
-  font-family: 'CantarellBold';
+  font-family: 'ChunkFiveRegular';
 }
 
 /* Helpers */
@@ -139,12 +139,14 @@ body.admin .container {
 /* line 11, src/partials/_admin.scss */
 body.admin #header {
   background-color: #44ccd9;
-  background-image: url('../images/bg.pattern4.png?1294325834');
+  background-image: url('../images/bg.pattern4.png?1294837972');
 }
 /* line 14, src/partials/_admin.scss */
 body.admin #header .container {
-  padding-top: 15px;
   *zoom: 1;
+  padding-top: 15px;
+  height: 62px;
+  /* Maintain height when nav bar not present.*/
 }
 /* line 22, ../../../../../../../../../home/rhoward/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 body.admin #header .container:after {
@@ -155,25 +157,27 @@ body.admin #header .container:after {
   overflow: hidden;
   visibility: hidden;
 }
-/* line 19, src/partials/_admin.scss */
+/* line 20, src/partials/_admin.scss */
 body.admin #header h1 {
   position: absolute;
   display: block;
   left: 0;
   font-size: 4em;
   line-height: 1em;
-  margin-top: -0.16em;
-  margin-left: -0.12em;
+  padding-top: 0.05em;
+  margin-left: -0.04em;
+  /* Align content below with the vertical
+     stroke of the "D" glyph. */
   color: #47474c;
   text-shadow: #ccccdd 0 1px 1px;
 }
-/* line 31, src/partials/_admin.scss */
+/* line 33, src/partials/_admin.scss */
 body.admin #header ul.account {
   margin-right: 0.1em;
   display: block;
   float: right;
 }
-/* line 35, src/partials/_admin.scss */
+/* line 37, src/partials/_admin.scss */
 body.admin #header ul.account li {
   display: block;
   float: left;
@@ -183,22 +187,22 @@ body.admin #header ul.account li {
   border-left: 1px solid #2fb7c4;
   text-shadow: #ccccdd 0 1px 1px;
 }
-/* line 44, src/partials/_admin.scss */
+/* line 46, src/partials/_admin.scss */
 body.admin #header ul.account li.first {
   border-left: 0;
 }
-/* line 45, src/partials/_admin.scss */
+/* line 47, src/partials/_admin.scss */
 body.admin #header ul.account li a {
   color: #474747;
 }
-/* line 52, src/partials/_admin.scss */
+/* line 54, src/partials/_admin.scss */
 body.admin #header ul.navigation {
   clear: right;
   display: block;
   float: right;
-  margin-top: 10px;
+  margin-top: 14px;
 }
-/* line 58, src/partials/_admin.scss */
+/* line 60, src/partials/_admin.scss */
 body.admin #header ul.navigation li {
   display: block;
   float: left;
@@ -219,7 +223,7 @@ body.admin #header ul.navigation li {
   border-top-right-radius: 6px;
   z-index: 1;
 }
-/* line 67, src/partials/_admin.scss */
+/* line 69, src/partials/_admin.scss */
 body.admin #header ul.navigation li a {
   display: block;
   padding: 1px 20px 0;
@@ -231,14 +235,14 @@ body.admin #header ul.navigation li a {
   border: 0;
   text-shadow: #ccccdd 0 1px 1px;
 }
-/* line 78, src/partials/_admin.scss */
+/* line 80, src/partials/_admin.scss */
 body.admin #header ul.navigation li.selected {
   -moz-box-shadow: #22aab7 0 -6px 10px -6px;
   -webkit-box-shadow: #22aab7 0 -6px 10px -6px;
   -o-box-shadow: #22aab7 0 -6px 10px -6px;
   box-shadow: #22aab7 0 -6px 10px -6px;
 }
-/* line 81, src/partials/_admin.scss */
+/* line 83, src/partials/_admin.scss */
 body.admin #header ul.navigation li.selected a {
   color: #474747;
   background: #fffefb;
@@ -260,7 +264,7 @@ body.admin #header ul.navigation li.selected a {
   border-top-right-radius: 6px;
   text-shadow: none;
 }
-/* line 96, src/partials/_admin.scss */
+/* line 98, src/partials/_admin.scss */
 body.admin #content {
   clear: both;
   background-color: #fffefb;
@@ -272,42 +276,42 @@ body.admin #content {
   box-shadow: #22aab7 0 0 10px 0;
   z-index: 5;
 }
-/* line 104, src/partials/_admin.scss */
+/* line 106, src/partials/_admin.scss */
 body.admin #content .panel {
   padding: 15px 0;
   min-height: 200px;
 }
-/* line 109, src/partials/_admin.scss */
+/* line 111, src/partials/_admin.scss */
 body.admin #content h2 {
   font-size: 2.5em;
   line-height: 1em;
   padding-bottom: 0.6em;
   margin-left: -0.1em;
 }
-/* line 115, src/partials/_admin.scss */
+/* line 117, src/partials/_admin.scss */
 body.admin #content h3 {
   font-size: 1.3em;
   margin-left: -0.05em;
   padding-bottom: 0.6em;
 }
-/* line 123, src/partials/_admin.scss */
+/* line 125, src/partials/_admin.scss */
 body.admin #footer {
   font-size: 0.85em;
   line-height: 2.5em;
   color: #e3ddd3;
   background-color: #393329;
 }
-/* line 129, src/partials/_admin.scss */
+/* line 131, src/partials/_admin.scss */
 body.admin #footer .legal {
   display: block;
   margin-right: -0.15em;
   text-align: right;
 }
-/* line 134, src/partials/_admin.scss */
+/* line 136, src/partials/_admin.scss */
 body.admin #footer a {
   color: #44ccd9;
 }
-/* line 136, src/partials/_admin.scss */
+/* line 138, src/partials/_admin.scss */
 body.admin #footer a:hover, body.admin #footer a:active {
   border-bottom: 1px solid #44ccd9;
 }
