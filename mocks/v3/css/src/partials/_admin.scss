@@ -101,11 +101,9 @@ body.admin {
 		border-top: 1px solid $colorGreyLight;
 		border-bottom: 1px solid $colorGreyLight;
 		@include box-shadow($colorBaseHeavy, 0, 0, 10px);
-		z-index: 5;
 
 		.panel {
 			padding: 15px 0;
-			min-height: 200px;
 		}
 
 		h2 {

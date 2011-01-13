@@ -27,7 +27,24 @@
 		<div class="container">
 		
 			<div id="search" class="panel">
-				<form action="process.html" method="post">
+				<form class="search" action="process.html" method="post">
+
+					<span class="form">
+						<input name="terms" id="terms" type="text" class="text" />
+						<input name="submit" value="Search" type="submit" class="button" />
+					</span>
+					<ul class="info">
+						<li><h2>Scan</h2>
+						    <span class="explanation">the barcode on an attendee's ticket.</span></li>
+						<li><h2>Search</h2>
+						<span class="explanation">for an attendee by name, address or email.</span></li>
+					</ul>
+
+				</form>
+			</div>
+
+			<div id="search-results" class="panel hide next">
+				<form class="search" action="process.html" method="post">
 
 					<span class="form">
 						<input name="terms" id="terms" type="text" class="text" />
@@ -58,5 +75,7 @@
 		</div>
 	</div>
 
+	<script src="js/jquery-1.4.4.js"></script>
+	<script src="js/admin-process.js"></script>
 </body>
 </html>

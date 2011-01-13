@@ -1,6 +1,34 @@
 body.process {
 
-	#search {
+	#content .container {
+		position: relative;
+
+		.panel {
+			$slideAmount: ($fullWidth / 4); /* Don't slide completely to the left or right when switching. */
+
+			display: block;
+			position: relative;
+			opacity: 1;
+			min-height: 350px;
+			width: $fullWidth;
+
+			&.hide {
+				position: absolute;
+				top: 0;
+				opacity: 0;
+			}
+
+			&.hide.previous {
+				left: ($slideAmount * -1);
+			}
+			&.hide.next {
+				right: ($slideAmount * -1);
+			}
+		}
+	}
+
+
+	#search, #search-results {
 		$formWidth: 600px;
 		$buttonWidth: 100px;
 
@@ -63,10 +91,6 @@ body.process {
 
 
 	}
-
-	input#terms {
-	}
-
 
 
 
