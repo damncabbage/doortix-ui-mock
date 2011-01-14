@@ -78,8 +78,8 @@ body.admin {
 					@include letter-press;
 				}
 				&.selected {
-					@include box-shadow($colorBaseHeavy, 0, -6px, 10px, -6px);
-					//@include box-shadow(#aac0cc, 0, -3px, 8px);
+					// Firefox makes me sadface.
+					//@include box-shadow($colorBaseHeavy, 0, -6px, 10px, -6px);
 					a {
 						color: $colorText;
 						background: $colorWhite;
@@ -100,7 +100,9 @@ body.admin {
 		background-color: $colorWhite;
 		border-top: 1px solid $colorGreyLight;
 		border-bottom: 1px solid $colorGreyLight;
-		@include box-shadow($colorBaseHeavy, 0, 0, 10px);
+
+		// Firefox makes me sadface.
+		//@include box-shadow($colorBaseHeavy, 0, 0, 10px);
 
 		.panel {
 			padding: 15px 0;

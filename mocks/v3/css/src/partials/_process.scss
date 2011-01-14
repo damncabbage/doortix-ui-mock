@@ -1,28 +1,29 @@
 body.process {
 
 	#content .container {
-		position: relative;
-
-		.panel {
-			$slideAmount: ($fullWidth / 4); /* Don't slide completely to the left or right when switching. */
-
-			display: block;
+		.slider {
+			overflow: hidden;
 			position: relative;
-			opacity: 1;
-			min-height: 350px;
-			width: $fullWidth;
 
-			&.hide {
-				position: absolute;
-				top: 0;
-				opacity: 0;
-			}
+			.panel {
+				display: block;
+				position: relative;
+				opacity: 1;
+				min-height: 350px;
+				width: $fullWidth;
 
-			&.hide.previous {
-				left: ($slideAmount * -1);
-			}
-			&.hide.next {
-				right: ($slideAmount * -1);
+				&.hide {
+					position: absolute;
+					top: 0;
+					opacity: 0;
+				}
+
+				&.hide.previous {
+					left: ($fullWidth * -1);
+				}
+				&.hide.next {
+					right: ($fullWidth * -1);
+				}
 			}
 		}
 	}

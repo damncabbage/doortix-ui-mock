@@ -235,13 +235,6 @@ body.admin #header ul.navigation li a {
   border: 0;
   text-shadow: #ccccdd 0 1px 1px;
 }
-/* line 80, src/partials/_admin.scss */
-body.admin #header ul.navigation li.selected {
-  -moz-box-shadow: #22aab7 0 -6px 10px -6px;
-  -webkit-box-shadow: #22aab7 0 -6px 10px -6px;
-  -o-box-shadow: #22aab7 0 -6px 10px -6px;
-  box-shadow: #22aab7 0 -6px 10px -6px;
-}
 /* line 83, src/partials/_admin.scss */
 body.admin #header ul.navigation li.selected a {
   color: #474747;
@@ -270,57 +263,53 @@ body.admin #content {
   background-color: #fffefb;
   border-top: 1px solid #aaa9a6;
   border-bottom: 1px solid #aaa9a6;
-  -moz-box-shadow: #22aab7 0 0 10px 0;
-  -webkit-box-shadow: #22aab7 0 0 10px 0;
-  -o-box-shadow: #22aab7 0 0 10px 0;
-  box-shadow: #22aab7 0 0 10px 0;
 }
-/* line 105, src/partials/_admin.scss */
+/* line 107, src/partials/_admin.scss */
 body.admin #content .panel {
   padding: 15px 0;
 }
-/* line 109, src/partials/_admin.scss */
+/* line 111, src/partials/_admin.scss */
 body.admin #content h2 {
   font-size: 2.5em;
   line-height: 1em;
   padding-bottom: 0.6em;
   margin-left: -0.1em;
 }
-/* line 115, src/partials/_admin.scss */
+/* line 117, src/partials/_admin.scss */
 body.admin #content h3 {
   font-size: 1.3em;
   margin-left: -0.05em;
   padding-bottom: 0.6em;
 }
-/* line 123, src/partials/_admin.scss */
+/* line 125, src/partials/_admin.scss */
 body.admin #footer {
   font-size: 0.85em;
   line-height: 2.5em;
   color: #e3ddd3;
   background-color: #393329;
 }
-/* line 129, src/partials/_admin.scss */
+/* line 131, src/partials/_admin.scss */
 body.admin #footer .legal {
   display: block;
   margin-right: -0.15em;
   text-align: right;
 }
-/* line 134, src/partials/_admin.scss */
+/* line 136, src/partials/_admin.scss */
 body.admin #footer a {
   color: #44ccd9;
 }
-/* line 136, src/partials/_admin.scss */
+/* line 138, src/partials/_admin.scss */
 body.admin #footer a:hover, body.admin #footer a:active {
   border-bottom: 1px solid #44ccd9;
 }
 
-/* line 3, src/partials/_process.scss */
-body.process #content .container {
+/* line 4, src/partials/_process.scss */
+body.process #content .container .slider {
+  overflow: hidden;
   position: relative;
 }
-/* line 6, src/partials/_process.scss */
-body.process #content .container .panel {
-  /* Don't slide completely to the left or right when switching. */
+/* line 8, src/partials/_process.scss */
+body.process #content .container .slider .panel {
   display: block;
   position: relative;
   opacity: 1;
@@ -328,20 +317,20 @@ body.process #content .container .panel {
   width: 960px;
 }
 /* line 15, src/partials/_process.scss */
-body.process #content .container .panel.hide {
+body.process #content .container .slider .panel.hide {
   position: absolute;
   top: 0;
   opacity: 0;
 }
 /* line 21, src/partials/_process.scss */
-body.process #content .container .panel.hide.previous {
-  left: -240px;
+body.process #content .container .slider .panel.hide.previous {
+  left: -960px;
 }
 /* line 24, src/partials/_process.scss */
-body.process #content .container .panel.hide.next {
-  right: -240px;
+body.process #content .container .slider .panel.hide.next {
+  right: -960px;
 }
-/* line 35, src/partials/_process.scss */
+/* line 36, src/partials/_process.scss */
 body.process #search .form, body.process #search-results .form {
   display: block;
   width: 600px;
@@ -365,13 +354,13 @@ body.process #search .form:after, body.process #search-results .form:after {
   overflow: hidden;
   visibility: hidden;
 }
-/* line 44, src/partials/_process.scss */
+/* line 45, src/partials/_process.scss */
 body.process #search .form .text, body.process #search .form .button, body.process #search-results .form .text, body.process #search-results .form .button {
   display: inline-block;
   border: 1px solid #717171;
   font-size: 16px;
 }
-/* line 49, src/partials/_process.scss */
+/* line 50, src/partials/_process.scss */
 body.process #search .form .text, body.process #search-results .form .text {
   -moz-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -391,7 +380,7 @@ body.process #search .form .text, body.process #search-results .form .text {
   padding: 5px 10px;
   float: left;
 }
-/* line 56, src/partials/_process.scss */
+/* line 57, src/partials/_process.scss */
 body.process #search .form .button, body.process #search-results .form .button {
   -moz-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
@@ -416,7 +405,7 @@ body.process #search .form .button, body.process #search-results .form .button {
   -o-box-shadow: 1px 1px 2px 0px #d8e2ba inset,-1px -1px 1px 0px #729707 inset;
   box-shadow: 1px 1px 2px 0px #d8e2ba inset,-1px -1px 1px 0px #729707 inset;
 }
-/* line 67, src/partials/_process.scss */
+/* line 68, src/partials/_process.scss */
 body.process #search .info, body.process #search-results .info {
   *zoom: 1;
   display: block;
@@ -446,12 +435,12 @@ body.process #search .info:after, body.process #search-results .info:after {
   overflow: hidden;
   visibility: hidden;
 }
-/* line 76, src/partials/_process.scss */
+/* line 77, src/partials/_process.scss */
 body.process #search .info li, body.process #search-results .info li {
   clear: both;
   display: block;
 }
-/* line 80, src/partials/_process.scss */
+/* line 81, src/partials/_process.scss */
 body.process #search .info li h2, body.process #search-results .info li h2 {
   font-size: 2.7em;
   line-height: 0.8em;

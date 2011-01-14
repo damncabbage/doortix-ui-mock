@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 		// HACK: Styling values embedded in javascript.
 		oldPanel.animate({
-			left: '-200px',
+			left: '-960px',
 			opacity: 0
 		}, 'slow', 'swing', function(){
 			$(this).addClass('hide previous');

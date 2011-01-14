@@ -25,41 +25,43 @@
 
 	<div id="content">
 		<div class="container">
+			<div class="slider">
 		
-			<div id="search" class="panel">
-				<form class="search" action="process.html" method="post">
+				<div id="search" class="panel">
+					<form class="search" action="process.php" method="post">
 
-					<span class="form">
-						<input name="terms" id="terms" type="text" class="text" />
-						<input name="submit" value="Search" type="submit" class="button" />
-					</span>
-					<ul class="info">
-						<li><h2>Scan</h2>
-						    <span class="explanation">the barcode on an attendee's ticket.</span></li>
-						<li><h2>Search</h2>
-						<span class="explanation">for an attendee by name, address or email.</span></li>
-					</ul>
+						<span class="form">
+							<input name="terms" id="terms" type="text" class="text" />
+							<input name="submit" value="Search" type="submit" class="button" />
+						</span>
+						<ul class="info">
+							<li><h2>Scan</h2>
+								<span class="explanation">the barcode on an attendee's ticket.</span></li>
+							<li><h2>Search</h2>
+							<span class="explanation">for an attendee by name, address or email.</span></li>
+						</ul>
 
-				</form>
+					</form>
+				</div>
+
+				<div id="search-results" class="panel hide next">
+					<form class="search" action="process.php" method="post">
+
+						<span class="form">
+							<input name="terms" id="terms" type="text" class="text" />
+							<input name="submit" value="Search" type="submit" class="button" />
+						</span>
+						<ul class="info">
+							<li><h2>Scan</h2>
+								<span class="explanation">the barcode on an attendee's ticket.</span></li>
+							<li><h2>Search</h2>
+							<span class="explanation">for an attendee by name, address or email.</span></li>
+						</ul>
+
+					</form>
+				</div>
+
 			</div>
-
-			<div id="search-results" class="panel hide next">
-				<form class="search" action="process.html" method="post">
-
-					<span class="form">
-						<input name="terms" id="terms" type="text" class="text" />
-						<input name="submit" value="Search" type="submit" class="button" />
-					</span>
-					<ul class="info">
-						<li><h2>Scan</h2>
-						    <span class="explanation">the barcode on an attendee's ticket.</span></li>
-						<li><h2>Search</h2>
-						<span class="explanation">for an attendee by name, address or email.</span></li>
-					</ul>
-
-				</form>
-			</div>
-
 		</div>
 	</div>
 
