@@ -38,30 +38,32 @@ body.process {
 			width: $formWidth;
 			margin: 60px auto 0;
 			padding: 10px;
-			background: $colorBaseLight;
+			background: $colorGreyMedium;
 			@include border-radius($radiusNeutral);
 			@include pie-clearfix;
 
 			.text, .button {
+				float: left;
 				display: inline-block;
-				border: 1px solid $colorGreyMedium;
 				font-size: 16px;
+				border: 3px solid $colorHighlight2;
 			}
 			.text {
 				@include border-left-radius($radiusNeutral);
 				width: $formWidth - $buttonWidth - 7px - 20px;
 				height: 32px; line-height: 32px;
 				padding: 5px 10px;
-				float: left;
+				border-right: 0;
 			}
 			.button {
 				@include border-right-radius($radiusNeutral);
-				margin-left: 5px;
 				width: $buttonWidth;
-				height: 44px; line-height: 44px;
-				float: left;
-				background: $colorFocusMedium;
-				@include multi-box-shadow(1px 1px 2px 0px $colorFocusLight inset, -1px -1px 1px 0px $colorFocusHeavy inset);
+				height: 48px; line-height: 48px;
+				background-color: $colorHighlight2Light;
+/*				@include multi-box-shadow(1px 1px 2px 0px $colorHighlight2Light inset, -1px -1px 1px 0px $colorHighlight2Heavy inset);
+				@include linear-gradient(color-stops($colorHighlight2, #{$colorHighlight2Light}), center top);
+				background-image: -moz-linear-gradient(center top, $colorHighlight2, #{$colorHighlight2Light}) repeat scroll 0 0 transparent
+*/
 			}
 		}
 
@@ -70,7 +72,7 @@ body.process {
 			display: block;
 			width: 420px;
 			margin: 0 auto 60px;
-			background: $colorBaseLight;
+			background: $colorGreyMedium;
 			padding: 15px 10px 0;
 			@include border-bottom-radius($radiusNeutral);
 

@@ -73,7 +73,7 @@
 				<span class="total">2045</span>
 				<span class="description">attendees checked in</span>
 			</div>
-			<span class="legal">Brought you by <a href="http://robhoward.id.au">Rob Howard</a>, Earl Grey, and bad country music.</span>
+			<span class="legal">Brought you by <a href="http://robhoward.id.au">Rob Howard</a>, lots of tea, and <a href="http://en.wikipedia.org/wiki/The_King_Is_Dead_%28album%29">awesome country music</a>.</span>
 		</div>
 	</div>
 

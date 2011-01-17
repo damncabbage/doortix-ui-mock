@@ -1,10 +1,12 @@
 
 @import "compass/reset";
+
 @import "compass/utilities";
 @import "compass/css3";
 
 /* Global Vars */
 
+/*
 $colorWhite: #fffefb;
 
 $colorBaseMedium: #44CCD9;
@@ -15,11 +17,31 @@ $colorGreyLight: $colorWhite - #555;
 $colorGreyHeavy: #E3DDD3 - #aaa;
 $colorGreyMedium: lighten(desaturate(#E3DDD3 - #aaa, 25%), 25%);
 
-$colorText: #474747;
+$colorBlack: #474747;
 
 $colorFocusMedium: adjust-hue($colorBaseMedium, -110deg);
 $colorFocusLight: lighten(desaturate($colorFocusMedium, 25%), 25%);
 $colorFocusHeavy: darken(saturate($colorFocusMedium, 25%), 25%);
+*/
+
+$colorBaseLight: #99d1f5;
+$colorBaseMedium: #3290d7;
+$colorBaseHeavy: #1c6aa5;
+
+$colorGreyLight: #f4f4ee;
+$colorGreyMedium: #e5e5db;
+$colorGreyHeavy: #3a3a3a;
+
+$colorWhite: #fdfdfd;
+$colorBlack: #2d2c2c;
+
+$colorHighlight1: #229310;
+$colorHighlight1Light: brighten($colorHighlight1, 30%);
+$colorHighlight1Heavy: darken($colorHighlight1, 30%);
+
+$colorHighlight2: #fe9909;
+$colorHighlight2Light: brighten($colorHighlight2, 30%);
+$colorHighlight2Heavy: darken($colorHighlight2, 30%);
 
 $radiusSharp: 3px;
 $radiusNeutral: 6px;
@@ -37,7 +59,7 @@ body {
 	font-family: Verdana, sans-serif;
 	font-size: 0.8em;
 	line-height: 1.3em;
-	color: $colorText;
+	color: $colorBlack;
 	background: $colorBaseMedium;
 }
 a {
@@ -51,8 +73,8 @@ h1,h2,h3,h4,h5 {
 /* Helpers */
 
 // Indent text into the background.
-@mixin letter-press {
-	@include text-shadow(#ccd, 0, 1px, 1px);
+@mixin letter-press($shadowColor: $colorBaseHeavy) {
+	@include text-shadow($shadowColor, 0px, 1px);
 }
 
 // Stop-gap before multiple shadow support in the next version of Compass.

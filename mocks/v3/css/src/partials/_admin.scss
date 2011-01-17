@@ -9,6 +9,7 @@ body.admin {
 	}
 	
 	#header {
+		color: $colorWhite;
 		background-color: $colorBaseMedium;
 		background-image: image_url('bg.pattern4.png');
 		.container {
@@ -26,7 +27,6 @@ body.admin {
 			padding-top: 0.05em;
 			margin-left: -0.04em; /* Align content below with the vertical
 			                         stroke of the "D" glyph. */
-			color: $colorText + #000005;
 			@include letter-press;
 		}
 
@@ -40,12 +40,13 @@ body.admin {
 				text-align: right;
 				margin-left: 10px;
 				padding-left: 10px;
-				border-left: 1px solid ($colorBaseMedium - #151515);
+				border-left: 1px solid desaturate($colorBaseLight, 30%);
 				@include letter-press;
 
 				&.first { border-left: 0; }
 				a {
-					color: $colorText;
+					color: $colorWhite;
+					&:hover { border-bottom: 1px solid $colorWhite; }
 				}
 			}
 		}
@@ -73,7 +74,7 @@ body.admin {
 					line-height: 30px;
 					font-size: 1em;
 					font-weight: bold;
-					color: $colorText + #000005;
+					color: $colorWhite;
 					border: 0;
 					@include letter-press;
 				}
@@ -81,7 +82,7 @@ body.admin {
 					// Firefox makes me sadface.
 					//@include box-shadow($colorBaseHeavy, 0, -6px, 10px, -6px);
 					a {
-						color: $colorText;
+						color: $colorBlack;
 						background: $colorWhite;
 						padding-top: 0;
 						border-top: 1px solid $colorGreyLight;
@@ -134,6 +135,7 @@ body.admin {
 			text-align: right;
 		}
 		a {
+			@include letter-press($colorBlack);
 			color: $colorBaseMedium;
 			&:hover,&:active {
 				border-bottom: 1px solid $colorBaseMedium;
