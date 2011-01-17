@@ -381,7 +381,8 @@ body.process #search .form .text, body.process #search .form .button, body.proce
   float: left;
   display: inline-block;
   font-size: 16px;
-  border: 3px solid #fe9909;
+  border-style: solid;
+  border-color: #fe9909;
 }
 /* line 51, src/partials/_process.scss */
 body.process #search .form .text, body.process #search-results .form .text {
@@ -401,9 +402,10 @@ body.process #search .form .text, body.process #search-results .form .text {
   height: 32px;
   line-height: 32px;
   padding: 5px 10px;
+  border-width: 3px;
   border-right: 0;
 }
-/* line 58, src/partials/_process.scss */
+/* line 59, src/partials/_process.scss */
 body.process #search .form .button, body.process #search-results .form .button {
   -moz-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
@@ -420,13 +422,18 @@ body.process #search .form .button, body.process #search-results .form .button {
   width: 100px;
   height: 48px;
   line-height: 48px;
-  background-color: brighten(#fe9909, 30%);
-  /*				@include multi-box-shadow(1px 1px 2px 0px $colorHighlight2Light inset, -1px -1px 1px 0px $colorHighlight2Heavy inset);
-  				@include linear-gradient(color-stops($colorHighlight2, #{$colorHighlight2Light}), center top);
-  				background-image: -moz-linear-gradient(center top, $colorHighlight2, #{$colorHighlight2Light}) repeat scroll 0 0 transparent
-  */
+  background-color: #feb955;
+  border-width: 1px;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fe9909), color-stop(50%, #feb955), color-stop(100%, #fe9909));
+  background-image: -moz-linear-gradient(center top, #fe9909 0%, #feb955 50%, #fe9909 100%);
+  background-image: linear-gradient(center top, #fe9909 0%, #feb955 50%, #fe9909 100%);
+  -moz-box-shadow: 1px 1px 1px 0px #feb955 inset,-1px -1px 1px 0px #ba6d01 inset;
+  -webkit-box-shadow: 1px 1px 1px 0px #feb955 inset,-1px -1px 1px 0px #ba6d01 inset;
+  -o-box-shadow: 1px 1px 1px 0px #feb955 inset,-1px -1px 1px 0px #ba6d01 inset;
+  box-shadow: 1px 1px 1px 0px #feb955 inset,-1px -1px 1px 0px #ba6d01 inset;
 }
-/* line 70, src/partials/_process.scss */
+/* line 72, src/partials/_process.scss */
 body.process #search .info, body.process #search-results .info {
   *zoom: 1;
   display: block;
@@ -456,12 +463,12 @@ body.process #search .info:after, body.process #search-results .info:after {
   overflow: hidden;
   visibility: hidden;
 }
-/* line 79, src/partials/_process.scss */
+/* line 81, src/partials/_process.scss */
 body.process #search .info li, body.process #search-results .info li {
   clear: both;
   display: block;
 }
-/* line 83, src/partials/_process.scss */
+/* line 85, src/partials/_process.scss */
 body.process #search .info li h2, body.process #search-results .info li h2 {
   font-size: 2.7em;
   line-height: 0.8em;

@@ -36,12 +36,12 @@ $colorWhite: #fdfdfd;
 $colorBlack: #2d2c2c;
 
 $colorHighlight1: #229310;
-$colorHighlight1Light: brighten($colorHighlight1, 30%);
+$colorHighlight1Light: lighten($colorHighlight1, 30%);
 $colorHighlight1Heavy: darken($colorHighlight1, 30%);
 
 $colorHighlight2: #fe9909;
-$colorHighlight2Light: brighten($colorHighlight2, 30%);
-$colorHighlight2Heavy: darken($colorHighlight2, 30%);
+$colorHighlight2Light: lighten($colorHighlight2, 15%);
+$colorHighlight2Heavy: darken($colorHighlight2, 15%);
 
 $radiusSharp: 3px;
 $radiusNeutral: 6px;

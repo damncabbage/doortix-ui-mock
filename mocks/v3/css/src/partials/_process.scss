@@ -46,13 +46,14 @@ body.process {
 				float: left;
 				display: inline-block;
 				font-size: 16px;
-				border: 3px solid $colorHighlight2;
+				border-style: solid; border-color: $colorHighlight2;
 			}
 			.text {
 				@include border-left-radius($radiusNeutral);
 				width: $formWidth - $buttonWidth - 7px - 20px;
 				height: 32px; line-height: 32px;
 				padding: 5px 10px;
+				border-width: 3px;
 				border-right: 0;
 			}
 			.button {
@@ -60,10 +61,11 @@ body.process {
 				width: $buttonWidth;
 				height: 48px; line-height: 48px;
 				background-color: $colorHighlight2Light;
-/*				@include multi-box-shadow(1px 1px 2px 0px $colorHighlight2Light inset, -1px -1px 1px 0px $colorHighlight2Heavy inset);
-				@include linear-gradient(color-stops($colorHighlight2, #{$colorHighlight2Light}), center top);
-				background-image: -moz-linear-gradient(center top, $colorHighlight2, #{$colorHighlight2Light}) repeat scroll 0 0 transparent
-*/
+				border-width: 1px;
+				font-weight: bold;
+				@include linear-gradient(color-stops($colorHighlight2, $colorHighlight2Light, $colorHighlight2), center top);
+				@include multi-box-shadow(1px 1px 1px 0px $colorHighlight2Light inset, -1px -1px 1px 0px $colorHighlight2Heavy inset);
+				//background-image: -moz-linear-gradient(center top, $colorHighlight2, #{$colorHighlight2Light}) repeat scroll 0 0 transparent
 			}
 		}
 
