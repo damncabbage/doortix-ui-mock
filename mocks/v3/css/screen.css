@@ -357,14 +357,14 @@ body.process #search .form, body.process #search-results .form {
   display: block;
   width: 600px;
   margin: 60px auto 0;
-  padding: 10px;
+  padding: 11px 10px;
   background: #e5e5db;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -khtml-border-radius: 6px;
-  border-radius: 6px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -o-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -khtml-border-radius: 9px;
+  border-radius: 9px;
   *zoom: 1;
 }
 /* line 22, ../../../../../../../../../home/rhoward/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -386,19 +386,19 @@ body.process #search .form .text, body.process #search .form .button, body.proce
 }
 /* line 51, src/partials/_process.scss */
 body.process #search .form .text, body.process #search-results .form .text {
-  -moz-border-radius-topleft: 6px;
-  -webkit-border-top-left-radius: 6px;
-  -o-border-top-left-radius: 6px;
-  -ms-border-top-left-radius: 6px;
-  -khtml-border-top-left-radius: 6px;
-  border-top-left-radius: 6px;
-  -moz-border-radius-bottomleft: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  -o-border-bottom-left-radius: 6px;
-  -ms-border-bottom-left-radius: 6px;
-  -khtml-border-bottom-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  width: 473px;
+  -moz-border-radius-topleft: 9px;
+  -webkit-border-top-left-radius: 9px;
+  -o-border-top-left-radius: 9px;
+  -ms-border-top-left-radius: 9px;
+  -khtml-border-top-left-radius: 9px;
+  border-top-left-radius: 9px;
+  -moz-border-radius-bottomleft: 9px;
+  -webkit-border-bottom-left-radius: 9px;
+  -o-border-bottom-left-radius: 9px;
+  -ms-border-bottom-left-radius: 9px;
+  -khtml-border-bottom-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  width: 474px;
   height: 32px;
   line-height: 32px;
   padding: 5px 10px;
@@ -407,22 +407,23 @@ body.process #search .form .text, body.process #search-results .form .text {
 }
 /* line 59, src/partials/_process.scss */
 body.process #search .form .button, body.process #search-results .form .button {
-  -moz-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -o-border-top-right-radius: 6px;
-  -ms-border-top-right-radius: 6px;
-  -khtml-border-top-right-radius: 6px;
-  border-top-right-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  -o-border-bottom-right-radius: 6px;
-  -ms-border-bottom-right-radius: 6px;
-  -khtml-border-bottom-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  -moz-border-radius-topright: 9px;
+  -webkit-border-top-right-radius: 9px;
+  -o-border-top-right-radius: 9px;
+  -ms-border-top-right-radius: 9px;
+  -khtml-border-top-right-radius: 9px;
+  border-top-right-radius: 9px;
+  -moz-border-radius-bottomright: 9px;
+  -webkit-border-bottom-right-radius: 9px;
+  -o-border-bottom-right-radius: 9px;
+  -ms-border-bottom-right-radius: 9px;
+  -khtml-border-bottom-right-radius: 9px;
+  border-bottom-right-radius: 9px;
   width: 100px;
   height: 48px;
   line-height: 48px;
   background-color: #feb955;
+  color: #2d2c2c;
   border-width: 1px;
   font-weight: bold;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fe9909), color-stop(50%, #feb955), color-stop(100%, #fe9909));
@@ -441,18 +442,18 @@ body.process #search .info, body.process #search-results .info {
   margin: 0 auto 60px;
   background: #e5e5db;
   padding: 15px 10px 0;
-  -moz-border-radius-bottomleft: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  -o-border-bottom-left-radius: 6px;
-  -ms-border-bottom-left-radius: 6px;
-  -khtml-border-bottom-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  -o-border-bottom-right-radius: 6px;
-  -ms-border-bottom-right-radius: 6px;
-  -khtml-border-bottom-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomleft: 9px;
+  -webkit-border-bottom-left-radius: 9px;
+  -o-border-bottom-left-radius: 9px;
+  -ms-border-bottom-left-radius: 9px;
+  -khtml-border-bottom-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  -moz-border-radius-bottomright: 9px;
+  -webkit-border-bottom-right-radius: 9px;
+  -o-border-bottom-right-radius: 9px;
+  -ms-border-bottom-right-radius: 9px;
+  -khtml-border-bottom-right-radius: 9px;
+  border-bottom-right-radius: 9px;
 }
 /* line 22, ../../../../../../../../../home/rhoward/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 body.process #search .info:after, body.process #search-results .info:after {

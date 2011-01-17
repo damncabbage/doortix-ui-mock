@@ -37,9 +37,9 @@ body.process {
 			display: block;
 			width: $formWidth;
 			margin: 60px auto 0;
-			padding: 10px;
+			padding: 11px 10px;
 			background: $colorGreyMedium;
-			@include border-radius($radiusNeutral);
+			@include border-radius($radiusBlunt);
 			@include pie-clearfix;
 
 			.text, .button {
@@ -49,23 +49,23 @@ body.process {
 				border-style: solid; border-color: $colorHighlight2;
 			}
 			.text {
-				@include border-left-radius($radiusNeutral);
-				width: $formWidth - $buttonWidth - 7px - 20px;
+				@include border-left-radius($radiusBlunt);
+				width: $formWidth - $buttonWidth - 6px - 20px;
 				height: 32px; line-height: 32px;
 				padding: 5px 10px;
 				border-width: 3px;
 				border-right: 0;
 			}
 			.button {
-				@include border-right-radius($radiusNeutral);
+				@include border-right-radius($radiusBlunt);
 				width: $buttonWidth;
 				height: 48px; line-height: 48px;
 				background-color: $colorHighlight2Light;
+				color: $colorBlack;
 				border-width: 1px;
 				font-weight: bold;
 				@include linear-gradient(color-stops($colorHighlight2, $colorHighlight2Light, $colorHighlight2), center top);
 				@include multi-box-shadow(1px 1px 1px 0px $colorHighlight2Light inset, -1px -1px 1px 0px $colorHighlight2Heavy inset);
-				//background-image: -moz-linear-gradient(center top, $colorHighlight2, #{$colorHighlight2Light}) repeat scroll 0 0 transparent
 			}
 		}
 
@@ -76,7 +76,7 @@ body.process {
 			margin: 0 auto 60px;
 			background: $colorGreyMedium;
 			padding: 15px 10px 0;
-			@include border-bottom-radius($radiusNeutral);
+			@include border-bottom-radius($radiusBlunt);
 
 			li {
 				clear: both;
